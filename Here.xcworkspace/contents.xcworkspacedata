@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Empty Window.xcodeproj">
+      location = "group:NetworkService/NetworkService.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Empty Window/Empty Window.xcodeproj">
    </FileRef>
 </Workspace>

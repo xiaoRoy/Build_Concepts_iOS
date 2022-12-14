@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C821BDC6293523A200EE27BD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BDC5293523A200EE27BD /* Network.swift */; };
 		C82C8C9F28B4EC7F00CBF5D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */; };
 		C82C8CA128B4EC7F00CBF5D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */; };
 		C82C8CA328B4EC7F00CBF5D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C8CA228B4EC7F00CBF5D7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C821BDC5293523A200EE27BD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C82C8C9B28B4EC7F00CBF5D7 /* Empty Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Empty Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C821BDC42935238E00EE27BD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C821BDC5293523A200EE27BD /* Network.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		C821BDC7293523B000EE27BD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		C82C8C9228B4EC7F00CBF5D7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +73,8 @@
 		C82C8C9D28B4EC7F00CBF5D7 /* Empty Window */ = {
 			isa = PBXGroup;
 			children = (
+				C821BDC7293523B000EE27BD /* Login */,
+				C821BDC42935238E00EE27BD /* Network */,
 				C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */,
 				C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */,
 				C82C8CA228B4EC7F00CBF5D7 /* ViewController.swift */,
@@ -140,6 +159,7 @@
 			files = (
 				C82C8CA328B4EC7F00CBF5D7 /* ViewController.swift in Sources */,
 				C82C8C9F28B4EC7F00CBF5D7 /* AppDelegate.swift in Sources */,
+				C821BDC6293523A200EE27BD /* Network.swift in Sources */,
 				C82C8CA128B4EC7F00CBF5D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
