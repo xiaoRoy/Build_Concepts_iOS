@@ -11,6 +11,7 @@
 		C88D9AA0294A441600908C23 /* NetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88D9A95294A441500908C23 /* NetworkService.framework */; };
 		C88D9AA5294A441600908C23 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D9AA4294A441600908C23 /* NetworkServiceTests.swift */; };
 		C88D9AA6294A441600908C23 /* NetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = C88D9A98294A441500908C23 /* NetworkService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8E1E3EE294B7EBA00BA2E54 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1E3ED294B7EBA00BA2E54 /* LoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		C88D9A99294A441500908C23 /* NetworkService.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkService.docc; sourceTree = "<group>"; };
 		C88D9A9F294A441600908C23 /* NetworkServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88D9AA4294A441600908C23 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		C8E1E3ED294B7EBA00BA2E54 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		C88D9A97294A441500908C23 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				C8E1E3EC294B7E7900BA2E54 /* Login */,
 				C88D9A98294A441500908C23 /* NetworkService.h */,
 				C88D9A99294A441500908C23 /* NetworkService.docc */,
 			);
@@ -83,6 +86,14 @@
 				C88D9AA4294A441600908C23 /* NetworkServiceTests.swift */,
 			);
 			path = NetworkServiceTests;
+			sourceTree = "<group>";
+		};
+		C8E1E3EC294B7E7900BA2E54 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C8E1E3ED294B7EBA00BA2E54 /* LoginService.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C88D9A9A294A441500908C23 /* NetworkService.docc in Sources */,
+				C8E1E3EE294B7EBA00BA2E54 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +369,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.learn.NetworkService;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = NetworkService;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -385,7 +397,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.learn.NetworkService;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = NetworkService;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -396,6 +408,7 @@
 		C88D9AAD294A441600908C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5V385V7SU;
@@ -412,6 +425,7 @@
 		C88D9AAE294A441600908C23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5V385V7SU;
