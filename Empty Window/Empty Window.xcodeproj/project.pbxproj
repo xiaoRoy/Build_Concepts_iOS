@@ -14,7 +14,23 @@
 		C82C8CA628B4EC7F00CBF5D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA428B4EC7F00CBF5D7 /* Main.storyboard */; };
 		C82C8CA828B4EC8200CBF5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA728B4EC8200CBF5D7 /* Assets.xcassets */; };
 		C82C8CAB28B4EC8200CBF5D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA928B4EC8200CBF5D7 /* LaunchScreen.storyboard */; };
+		C8E1E3F1294B7FB400BA2E54 /* NetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E1E3F0294B7FB400BA2E54 /* NetworkService.framework */; };
+		C8E1E3F2294B7FB400BA2E54 /* NetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8E1E3F0294B7FB400BA2E54 /* NetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8E1E3F3294B7FB400BA2E54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C8E1E3F2294B7FB400BA2E54 /* NetworkService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C821BDC5293523A200EE27BD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -26,6 +42,7 @@
 		C82C8CA728B4EC8200CBF5D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82C8CAA28B4EC8200CBF5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C82C8CAC28B4EC8200CBF5D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E1E3F0294B7FB400BA2E54 /* NetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E1E3F1294B7FB400BA2E54 /* NetworkService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,18 +65,12 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
-		C821BDC7293523B000EE27BD /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		C82C8C9228B4EC7F00CBF5D7 = {
 			isa = PBXGroup;
 			children = (
 				C82C8C9D28B4EC7F00CBF5D7 /* Empty Window */,
 				C82C8C9C28B4EC7F00CBF5D7 /* Products */,
+				C8E1E3EF294B7FB400BA2E54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +85,7 @@
 		C82C8C9D28B4EC7F00CBF5D7 /* Empty Window */ = {
 			isa = PBXGroup;
 			children = (
-				C821BDC7293523B000EE27BD /* Login */,
+				C8770F27297ADA1B003B4B16 /* Calendar */,
 				C821BDC42935238E00EE27BD /* Network */,
 				C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */,
 				C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */,
@@ -86,6 +98,21 @@
 			path = "Empty Window";
 			sourceTree = "<group>";
 		};
+		C8770F27297ADA1B003B4B16 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		C8E1E3EF294B7FB400BA2E54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8E1E3F0294B7FB400BA2E54 /* NetworkService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +123,7 @@
 				C82C8C9728B4EC7F00CBF5D7 /* Sources */,
 				C82C8C9828B4EC7F00CBF5D7 /* Frameworks */,
 				C82C8C9928B4EC7F00CBF5D7 /* Resources */,
+				C8E1E3F3294B7FB400BA2E54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
