@@ -8,12 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let locationManager = LocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    
+    
+    @IBAction
+    func requestLocationWhenInUse(_ button: UIButton) {
+        print("Request Location")
+        locationManager.requestWhenInUseLocationAuthorization()
+    }
+    
+    @IBAction
+    func requestLocationAlways(_ button: UIButton) {
+        locationManager.requestAlwaysAuthorization()
+    }
     
     
     @IBAction
