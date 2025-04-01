@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C47D0C872D96A0B5000900D2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */; };
+		C47D0C892D96E93C000900D2 /* BuildInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */; };
+		C47D0C982D9AE2B8000900D2 /* Environemnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C972D9AE2B8000900D2 /* Environemnts.swift */; };
 		C821BDC6293523A200EE27BD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BDC5293523A200EE27BD /* Network.swift */; };
 		C82C8C9F28B4EC7F00CBF5D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */; };
 		C82C8CA128B4EC7F00CBF5D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */; };
@@ -47,6 +50,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfoViewController.swift; sourceTree = "<group>"; };
+		C47D0C972D9AE2B8000900D2 /* Environemnts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environemnts.swift; sourceTree = "<group>"; };
+		C49EF93D2D9AF0F500CCC432 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		C49EF93E2D9AF0F500CCC432 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C821BDC5293523A200EE27BD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C82C8C9B28B4EC7F00CBF5D7 /* Empty Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Empty Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 		D0564B3C2AD2B527002DBC2C /* CalculatorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTestCase.swift; sourceTree = "<group>"; };
 		D0E8864E2A4EC794003B6E40 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C47D0C8D2D9AAFEC000900D2 /* Configs */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Configs; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C82C8C9828B4EC7F00CBF5D7 /* Frameworks */ = {
@@ -83,6 +95,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C47442EB2D9AF22E00BEF3A7 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				C49EF93D2D9AF0F500CCC432 /* Debug.xcconfig */,
+				C49EF93E2D9AF0F500CCC432 /* Release.xcconfig */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		C47D0C852D96A09C000900D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */,
+				C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C47D0C942D9AE272000900D2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C47D0C972D9AE2B8000900D2 /* Environemnts.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		C821BDC42935238E00EE27BD /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +136,7 @@
 				D0564B312AD2B16A002DBC2C /* Empty Window Tests */,
 				C82C8C9C28B4EC7F00CBF5D7 /* Products */,
 				C8E1E3EF294B7FB400BA2E54 /* Frameworks */,
+				C47442EB2D9AF22E00BEF3A7 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +152,9 @@
 		C82C8C9D28B4EC7F00CBF5D7 /* Empty Window */ = {
 			isa = PBXGroup;
 			children = (
+				C47D0C942D9AE272000900D2 /* Base */,
+				C47D0C8D2D9AAFEC000900D2 /* Configs */,
+				C47D0C852D96A09C000900D2 /* Main */,
 				D0564B392AD2B411002DBC2C /* Data */,
 				D0E8864D2A4EC784003B6E40 /* Location */,
 				C8770F27297ADA1B003B4B16 /* Calendar */,
@@ -191,6 +233,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C47D0C8D2D9AAFEC000900D2 /* Configs */,
 			);
 			name = "Empty Window";
 			productName = "Empty Window";
@@ -279,7 +324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C82C8CA328B4EC7F00CBF5D7 /* ViewController.swift in Sources */,
+				C47D0C872D96A0B5000900D2 /* DashboardViewController.swift in Sources */,
 				C82C8C9F28B4EC7F00CBF5D7 /* AppDelegate.swift in Sources */,
+				C47D0C892D96E93C000900D2 /* BuildInfoViewController.swift in Sources */,
+				C47D0C982D9AE2B8000900D2 /* Environemnts.swift in Sources */,
 				C821BDC6293523A200EE27BD /* Network.swift in Sources */,
 				C82C8CA128B4EC7F00CBF5D7 /* SceneDelegate.swift in Sources */,
 				D0E8864F2A4EC794003B6E40 /* LocationDataManager.swift in Sources */,
@@ -442,15 +490,19 @@
 		};
 		C82C8CB028B4EC8200CBF5D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = C47D0C8D2D9AAFEC000900D2 /* Configs */;
+			baseConfigurationReferenceRelativePath = Debug.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Empty Window/Empty WindowDebug.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Empty Window/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -461,7 +513,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Empty-Window";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Empty-Window.debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -472,6 +524,8 @@
 		};
 		C82C8CB128B4EC8200CBF5D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = C47D0C8D2D9AAFEC000900D2 /* Configs */;
+			baseConfigurationReferenceRelativePath = Release.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +535,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Empty Window/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

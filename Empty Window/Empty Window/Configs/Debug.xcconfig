@@ -1,0 +1,10 @@
+//
+//  Debug.xcconfig
+//  Empty Window
+//
+//  Created by Jerry Li on 2025/4/1.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+API_BASE_URL = https://qa.example.com
