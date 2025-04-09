@@ -16,12 +16,12 @@ class DashboardViewController: UIViewController {
     }
     
     
-    @IBAction
-    func navigateToBuildState() {
-        
-        performSegue(withIdentifier: "ShowBuildInfo", sender: nil)
-    }
-    
+//    @IBAction
+//    func navigateToBuildState() {
+//        
+//        performSegue(withIdentifier: "ShowBuildInfo", sender: nil)
+//    }
+//    
 
     /*
     // MARK: - Navigation

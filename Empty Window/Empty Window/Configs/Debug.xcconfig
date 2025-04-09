@@ -7,4 +7,7 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-API_BASE_URL = https://qa.example.com
+
+#include "Base.xcconfig"
+API_BASE_URL = https:/$()/qa.api.example.com
+BUNDLE_IDENTIFYIER = $(BUNDLE_IDENTIFYIER).debug

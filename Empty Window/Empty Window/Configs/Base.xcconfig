@@ -1,12 +1,12 @@
 //
-//  Debug.xcconfig
+//  Base.xcconfig
 //  Empty Window
 //
-//  Created by Jerry Li on 2025/4/1.
+//  Created by Jerry Li on 2025/4/2.
 //
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-#include "Base.xcconfig"
-API_BASE_URL = https:/$()/api.example.com
+
+BUNDLE_IDENTIFYIER = com.learn.Empty-Window

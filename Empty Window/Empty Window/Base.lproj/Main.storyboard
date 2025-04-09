@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Build Info"/>
                                 <connections>
-                                    <action selector="navigateToBuildState" destination="KJm-SM-Ugz" eventType="touchUpInside" id="Wrr-XP-RQs"/>
+                                    <segue destination="GtY-5i-56w" kind="show" id="99x-fC-WTJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,29 +33,26 @@
                             <constraint firstItem="2me-a9-KAh" firstAttribute="top" secondItem="2LC-Jb-VJb" secondAttribute="top" constant="32" id="qBH-Zr-lkk"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="HKI-zN-7ag" kind="show" identifier="ShowBuildInfo" id="Fvk-57-pVl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuF-dV-eyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-957" y="-922"/>
         </scene>
         <!--Build Info View Controller-->
-        <scene sceneID="dmm-R5-UvU">
+        <scene sceneID="QcS-n5-YzO">
             <objects>
-                <viewController id="HKI-zN-7ag" customClass="BuildInfoViewController" customModule="Empty_Window" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Y9w-Je-7l3">
+                <viewController id="GtY-5i-56w" customClass="BuildInfoViewController" customModule="Empty_Window" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QIq-8h-Vvs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Tm0-JN-I9S"/>
+                        <viewLayoutGuide key="safeArea" id="1Xs-pc-f0h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xKE-BC-4o0"/>
+                    <navigationItem key="navigationItem" id="xkY-x9-gOD"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pZC-zK-AnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDI-Lc-f15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="-1104"/>
+            <point key="canvasLocation" x="-129" y="-1010"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

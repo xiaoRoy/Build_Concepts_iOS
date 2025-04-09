@@ -14,17 +14,18 @@ enum ConfigurationError: Error {
 
 enum Configuraions {
 
-    enum Keys {
+    private enum Keys {
         static let apiBaseUrl = "API_BASE_URL"
     }
 
-    static func value<T>(_ key: String) throws -> T {
-
-        guard Bundle.main.object(forInfoDictionaryKey: key) != nil else {
+    private static func value<T>(_ key: String) throws -> T {
+        
+        let valueToLoad = Bundle.main.object(forInfoDictionaryKey: key)
+        guard valueToLoad != nil else {
             throw ConfigurationError.keyNotFound(key)
         }
 
-        guard let value = Bundle.main.object(forInfoDictionaryKey: key) as? T
+        guard let value = valueToLoad as? T
         else {
             throw ConfigurationError.typeMismatch(
                 expected: "\(T.self)", key: key)
