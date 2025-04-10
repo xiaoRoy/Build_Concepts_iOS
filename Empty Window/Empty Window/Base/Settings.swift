@@ -7,27 +7,29 @@
 
 import Foundation
 
-enum ConfigurationError: Error {
+enum SettingsError: Error {
     case keyNotFound(String)
     case typeMismatch(expected: String, key: String)
 }
 
-enum Configuraions {
+enum Settings {
 
     private enum Keys {
         static let apiBaseUrl = "API_BASE_URL"
+        static let bundleName = "PRODUCT_NAME"
+        static let bundleDisplayName = "INFOPLIST_KEY_CFBundleDisplayName"
     }
 
     private static func value<T>(_ key: String) throws -> T {
         
         let valueToLoad = Bundle.main.object(forInfoDictionaryKey: key)
         guard valueToLoad != nil else {
-            throw ConfigurationError.keyNotFound(key)
+            throw SettingsError.keyNotFound(key)
         }
 
         guard let value = valueToLoad as? T
         else {
-            throw ConfigurationError.typeMismatch(
+            throw SettingsError.typeMismatch(
                 expected: "\(T.self)", key: key)
         }
 
@@ -40,7 +42,17 @@ enum Configuraions {
     
     static var apiBaseUrl: String {
         get throws {
-            return try value(Configuraions.Keys.apiBaseUrl)
+            return try value(Settings.Keys.apiBaseUrl)
         }
     }
+    
+//    static var bundleName: String {
+//        get throws {
+//            return try value(<#T##key: String##String#>)
+//        }
+//    }
+    
+    
+    
+    
 }

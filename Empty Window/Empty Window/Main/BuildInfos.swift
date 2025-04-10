@@ -66,6 +66,7 @@ class BuildInfosDelegate: NSObject, UITableViewDataSource {
         return 1
     }
 
+
 }
 
 class BuildInfoCell: UITableViewCell {
@@ -186,4 +187,42 @@ class BuildInfoCell: UITableViewCell {
         ]
     }
 
+}
+
+
+class BuildInfosHeader: UITableViewHeaderFooterView {
+    
+    static let reuseIdentifier = "BuildInfosHeader"
+    
+    
+    private let headerLabel: UILabel = {
+        let header = UILabel()
+        header.translatesAutoresizingMaskIntoConstraints = false
+        header.font = .boldSystemFont(ofSize: 18.0)
+        header.textColor = .systemBlue
+        header.text = "Debug"
+        return header
+    }()
+    
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    private func setupHeader() {
+        contentView.addSubview(headerLabel)
+        NSLayoutConstraint.activate([
+            headerLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            headerLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+        ])
+    }
+    
+    func setHeader(configName: String) {
+        headerLabel.text = configName
+    }
+    
 }

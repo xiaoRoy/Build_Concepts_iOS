@@ -10,3 +10,5 @@
 
 #include "Base.xcconfig"
 API_BASE_URL = https:/$()/api.example.com
+INFOPLIST_KEY_CFBundleDisplayName = Empty Window
+PRODUCT_NAME = Empty Window

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C47D0C872D96A0B5000900D2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */; };
 		C47D0C892D96E93C000900D2 /* BuildInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */; };
-		C47D0C982D9AE2B8000900D2 /* Environemnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C972D9AE2B8000900D2 /* Environemnts.swift */; };
+		C47D0C982D9AE2B8000900D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C972D9AE2B8000900D2 /* Settings.swift */; };
 		C4EE82C32D9D2E88008D82ED /* BuildInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE82C22D9D2E88008D82ED /* BuildInfos.swift */; };
 		C821BDC6293523A200EE27BD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BDC5293523A200EE27BD /* Network.swift */; };
 		C82C8C9F28B4EC7F00CBF5D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */; };
@@ -53,7 +53,7 @@
 /* Begin PBXFileReference section */
 		C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfoViewController.swift; sourceTree = "<group>"; };
-		C47D0C972D9AE2B8000900D2 /* Environemnts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environemnts.swift; sourceTree = "<group>"; };
+		C47D0C972D9AE2B8000900D2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C49EF93D2D9AF0F500CCC432 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C49EF93E2D9AF0F500CCC432 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C4EE82C22D9D2E88008D82ED /* BuildInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfos.swift; sourceTree = "<group>"; };
@@ -79,7 +79,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Debug.xcconfig,
-				"Empty Window/Configs/Base.xcconfig",
 				Release.xcconfig,
 			);
 			target = C82C8C9A28B4EC7F00CBF5D7 /* Empty Window */;
@@ -131,7 +130,7 @@
 		C47D0C942D9AE272000900D2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				C47D0C972D9AE2B8000900D2 /* Environemnts.swift */,
+				C47D0C972D9AE2B8000900D2 /* Settings.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -342,7 +341,7 @@
 				C47D0C872D96A0B5000900D2 /* DashboardViewController.swift in Sources */,
 				C82C8C9F28B4EC7F00CBF5D7 /* AppDelegate.swift in Sources */,
 				C47D0C892D96E93C000900D2 /* BuildInfoViewController.swift in Sources */,
-				C47D0C982D9AE2B8000900D2 /* Environemnts.swift in Sources */,
+				C47D0C982D9AE2B8000900D2 /* Settings.swift in Sources */,
 				C821BDC6293523A200EE27BD /* Network.swift in Sources */,
 				C4EE82C32D9D2E88008D82ED /* BuildInfos.swift in Sources */,
 				C82C8CA128B4EC7F00CBF5D7 /* SceneDelegate.swift in Sources */,
