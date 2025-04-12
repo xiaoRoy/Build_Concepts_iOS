@@ -8,5 +8,8 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-
-PRODUCT_BUNDLE_IDENTIFIER = com.learn.Empty-Window
+BASE_PRODUCT_BUNDLE_IDENTIFIER = com.learn.Empty-Window
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_PRODUCT_BUNDLE_IDENTIFIER)
+INFOPLIST_KEY_CFBundleDisplayName = Emptp Window
+BASE_PRODUCT_NAME = Empty Window
+PRODUCT_NAME = $(BASE_PRODUCT_NAME)

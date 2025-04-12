@@ -14,16 +14,19 @@ enum SettingsError: Error {
 
 enum Settings {
 
-    private enum Keys {
-        static let apiBaseUrl = "API_BASE_URL"
-        static let bundleName = "PRODUCT_NAME"
-        static let bundleDisplayName = "INFOPLIST_KEY_CFBundleDisplayName"
+    enum Key: String, CaseIterable {
+        
+        case buildConfiguration = "Build Configuration"
+        case bundleIdentifier = "CFBundleIdentifier"
+        case apiBaseUrl = "Api Base Url"
+        case bundleDisplayName = "CFBundleDisplayName"
+        case bundleName = "CFBundleName"
     }
 
-    private static func value<T>(_ key: String) throws -> T {
+    private static func getValue<T>(_ key: String) throws -> T {
         
         let valueToLoad = Bundle.main.object(forInfoDictionaryKey: key)
-        guard valueToLoad != nil else {
+        if valueToLoad == nil {
             throw SettingsError.keyNotFound(key)
         }
 
@@ -36,23 +39,44 @@ enum Settings {
         return value
     }
     
-//    static var apiBaseUrl: String {
-//        return value(Configuraions.apiBaseUrl)
-//    }
+    static func value(for key: Settings.Key) throws -> String {
+        return try getValue(key.rawValue)
+    }
     
-    static var apiBaseUrl: String {
+    static var allSettings:[(String, String)] {
         get throws {
-            return try value(Settings.Keys.apiBaseUrl)
+            return try Settings.Key.allCases.map {($0.rawValue, try value(for: $0))}
         }
     }
     
-//    static var bundleName: String {
-//        get throws {
-//            return try value(<#T##key: String##String#>)
-//        }
-//    }
+    static var buildConfiguraion: String {
+        get throws {
+            return try value(for: Settings.Key.buildConfiguration)
+        }
+    }
     
+    static var bundleIdentifier: String {
+        get throws {
+            return try value(for: Settings.Key.bundleIdentifier)
+        }
+    }
     
+    static var apiBaseUrl: String {
+        get throws {
+            return try value(for: Settings.Key.apiBaseUrl)
+        }
+    }
     
+    static var bundleDisplayName: String {
+        get throws {
+            return try value(for: Settings.Key.bundleDisplayName)
+        }
+    }
+    
+    static var bundleName: String {
+        get throws {
+            return try value(for: Settings.Key.bundleName)
+        }
+    }
     
 }

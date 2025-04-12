@@ -11,27 +11,14 @@ import UIKit
 class BuildInfo {
 
     let settingName: String
+    let settingValue: String
     let configToValueDic: [String: String]
 
-    private static let keyDebug = "Debug"
-    private static let keyRelease = "Release"
-
-    init(settingName: String, configToValueDic: [String: String]) {
+    init(settingName: String, settingValue: String, configToValueDic: [String: String] = [:]) {
         self.settingName = settingName
+        self.settingValue = settingValue
         self.configToValueDic = configToValueDic
 
-    }
-
-    static func createBuildInfos() -> [BuildInfo] {
-
-        return (0...50).map {_ in
-                BuildInfo(
-                    settingName: "API_BASE_URL",
-                    configToValueDic: [
-                        keyDebug: " https://qa.api.example.com",
-                        keyRelease: "https://api.example.com",
-                    ])
-            }
     }
 }
 
@@ -55,10 +42,10 @@ class BuildInfosDelegate: NSObject, UITableViewDataSource {
     {
         let cell =
             tableView.dequeueReusableCell(
-                withIdentifier: BuildInfoCell.reuseIdentifier, for: indexPath)
-            as! BuildInfoCell
+                withIdentifier: BuildInfoSimpleCell.reuseIdentifier, for: indexPath)
+            as! BuildInfoSimpleCell
         let buildInfo = buildInfos[indexPath.row]
-        cell.set(buildInfo: buildInfo)
+        cell.update(buildInfo: buildInfo)
         return cell
     }
     
@@ -67,6 +54,57 @@ class BuildInfosDelegate: NSObject, UITableViewDataSource {
     }
 
 
+}
+
+class BuildInfoSimpleCell: UITableViewCell {
+    
+    static let reuseIdentifier = "buildInfoSimpleCell"
+    
+    private let settingNameLabel: UILabel = {
+        let label = UILabel()
+        label.font = .boldSystemFont(ofSize: 16.0)
+        label.textColor = .black
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let settingValueLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 14.0)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .gray
+        return label
+    }()
+    
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setup()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    private func setup() {
+        contentView.addSubview(settingNameLabel)
+        contentView.addSubview(settingValueLabel)
+        let offset = 20.0
+        NSLayoutConstraint.activate([
+            settingNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: offset),
+            settingNameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: offset),
+            settingNameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -offset),
+            
+            settingValueLabel.firstBaselineAnchor.constraint(equalTo: settingNameLabel.firstBaselineAnchor),
+            settingValueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -offset)
+        ])
+    }
+    
+    func update(buildInfo: BuildInfo) {
+        self.settingNameLabel.text = buildInfo.settingName
+        self.settingValueLabel.text = buildInfo.settingValue
+    }
 }
 
 class BuildInfoCell: UITableViewCell {

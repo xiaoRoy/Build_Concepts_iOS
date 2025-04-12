@@ -14,10 +14,8 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
         tableView.translatesAutoresizingMaskIntoConstraints = false
 
         tableView.register(
-            BuildInfoCell.self,
-            forCellReuseIdentifier: BuildInfoCell.reuseIdentifier)
-        //        tableView.tableHeaderView = BuildInfosHeader()
-        //        tableView.register(BuildInfosHeader.self, forCellReuseIdentifier: BuildInfosHeader.reuseIdentifier)
+            BuildInfoSimpleCell.self,
+            forCellReuseIdentifier: BuildInfoSimpleCell.reuseIdentifier)
         return tableView
     }()
 
@@ -47,7 +45,7 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
     private func setupBuildInfos() {
 
         buildInfoDelegate = BuildInfosDelegate(
-            buildInfos: BuildInfo.createBuildInfos())
+            buildInfos: fetchSettings())
         buildInfos.dataSource = buildInfoDelegate
         buildInfos.delegate = self
         view.addSubview(buildInfos)
@@ -103,7 +101,7 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
 
     private func configHeaderView() {
         builfInfosHeader.addSubview(headerLable)
-        headerLable.text = "Degbug"
+        headerLable.text = "Debug"
 
         NSLayoutConstraint.activate([
             headerLable.topAnchor.constraint(
@@ -119,7 +117,6 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
         builfInfosHeader.setNeedsLayout()
         builfInfosHeader.layoutIfNeeded()
 
-        
         //        let size = builfInfosHeader.systemLayoutSizeFitting(
         //            CGSize(width: buildInfos.bounds.width, height: 0),
         //            withHorizontalFittingPriority: .required,
@@ -132,4 +129,22 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
 
         buildInfos.tableHeaderView = builfInfosHeader
     }
+
+    private func fetchSettings() -> [BuildInfo] {
+        var result: [BuildInfo] = []
+        do {
+            let bundleName = try Settings.bundleName
+            print(bundleName)
+            let allBuildInfos = try Settings.allSettings.map({
+                (key, value) -> BuildInfo in
+                return BuildInfo(settingName: key, settingValue: value)
+            })
+            result.append(contentsOf: allBuildInfos)
+        } catch {
+            print("Error \(error)")
+        }
+        return result
+
+    }
+
 }

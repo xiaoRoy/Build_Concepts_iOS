@@ -58,7 +58,7 @@
 		C49EF93E2D9AF0F500CCC432 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C4EE82C22D9D2E88008D82ED /* BuildInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfos.swift; sourceTree = "<group>"; };
 		C821BDC5293523A200EE27BD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		C82C8C9B28B4EC7F00CBF5D7 /* Empty Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Empty Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82C8C9B28B4EC7F00CBF5D7 /* Debug-Empty Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Debug-Empty Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C82C8CA228B4EC7F00CBF5D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		C82C8C9C28B4EC7F00CBF5D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C82C8C9B28B4EC7F00CBF5D7 /* Empty Window.app */,
+				C82C8C9B28B4EC7F00CBF5D7 /* Debug-Empty Window.app */,
 				D0564B302AD2B16A002DBC2C /* Empty Window Tests.xctest */,
 			);
 			name = Products;
@@ -253,7 +253,7 @@
 			);
 			name = "Empty Window";
 			productName = "Empty Window";
-			productReference = C82C8C9B28B4EC7F00CBF5D7 /* Empty Window.app */;
+			productReference = C82C8C9B28B4EC7F00CBF5D7 /* Debug-Empty Window.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D0564B2F2AD2B16A002DBC2C /* Empty Window Tests */ = {
@@ -530,8 +530,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Empty-Window.debug";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "${inherited}";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -563,8 +563,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Empty-Window";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "${inherited}";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
