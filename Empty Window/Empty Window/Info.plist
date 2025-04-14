@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>X API Key</key>
+	<string>$(X_API_KEY)</string>
 	<key>Build Configuration</key>
 	<string>$(CONFIGURATION)</string>
 	<key>Api Base Url</key>

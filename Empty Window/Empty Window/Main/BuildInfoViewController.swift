@@ -29,7 +29,7 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
         let lable = UILabel()
         lable.translatesAutoresizingMaskIntoConstraints = false
         lable.font = .boldSystemFont(ofSize: 20.0)
-        lable.textColor = .cyan
+        lable.textColor = .systemIndigo
         return lable
     }()
 
@@ -101,7 +101,7 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
 
     private func configHeaderView() {
         builfInfosHeader.addSubview(headerLable)
-        headerLable.text = "Debug"
+        headerLable.text = "Settings"
 
         NSLayoutConstraint.activate([
             headerLable.topAnchor.constraint(

@@ -21,6 +21,7 @@ enum Settings {
         case apiBaseUrl = "Api Base Url"
         case bundleDisplayName = "CFBundleDisplayName"
         case bundleName = "CFBundleName"
+        case xApiKey = "X API Key"
     }
 
     private static func getValue<T>(_ key: String) throws -> T {
@@ -76,6 +77,12 @@ enum Settings {
     static var bundleName: String {
         get throws {
             return try value(for: Settings.Key.bundleName)
+        }
+    }
+    
+    static var xApiKey: String {
+        get throws {
+            return try value(for: Settings.Key.xApiKey)
         }
     }
     
