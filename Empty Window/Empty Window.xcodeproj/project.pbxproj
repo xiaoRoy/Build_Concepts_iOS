@@ -139,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				C821BDC5293523A200EE27BD /* Network.swift */,
+				C8770F27297ADA1B003B4B16 /* Calendar */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -147,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				C82C8C9D28B4EC7F00CBF5D7 /* Empty Window */,
-				D0564B312AD2B16A002DBC2C /* Empty Window Tests */,
 				C82C8C9C28B4EC7F00CBF5D7 /* Products */,
 				C8E1E3EF294B7FB400BA2E54 /* Frameworks */,
 				C47442EB2D9AF22E00BEF3A7 /* Recovered References */,
@@ -171,7 +171,6 @@
 				C47D0C852D96A09C000900D2 /* Main */,
 				D0564B392AD2B411002DBC2C /* Data */,
 				D0E8864D2A4EC784003B6E40 /* Location */,
-				C8770F27297ADA1B003B4B16 /* Calendar */,
 				C821BDC42935238E00EE27BD /* Network */,
 				C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */,
 				C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */,
@@ -180,6 +179,7 @@
 				C82C8CA728B4EC8200CBF5D7 /* Assets.xcassets */,
 				C82C8CA928B4EC8200CBF5D7 /* LaunchScreen.storyboard */,
 				C82C8CAC28B4EC8200CBF5D7 /* Info.plist */,
+				D0564B312AD2B16A002DBC2C /* Empty Window Tests */,
 			);
 			path = "Empty Window";
 			sourceTree = "<group>";
