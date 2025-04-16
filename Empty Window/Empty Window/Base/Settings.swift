@@ -12,16 +12,33 @@ protocol SettingsProvider {
 }
 
 struct BundleSettingsProvider: SettingsProvider {
+
+    fileprivate static func getValue<T>(_ key: String) throws -> T {
+
+        let valueToLoad = Bundle.main.object(forInfoDictionaryKey: key)
+        if valueToLoad == nil {
+            throw SettingsError.keyNotFound(key)
+        }
+
+        guard let value = valueToLoad as? T
+        else {
+            throw SettingsError.typeMismatch(
+                expected: "\(T.self)", key: key)
+        }
+
+        return value
+    }
+
     func value(for key: String) throws -> String {
-        return try Settings.getValue(key)
+        return try BundleSettingsProvider.getValue(key)
     }
 }
 
 struct ConditionalCompilationSettingsProvider: SettingsProvider {
 
     static let firebaseKey: String = Settings.Key.firebaseKey.rawValue
-    
-    fileprivate static func getValue(_ key: String) throws -> String{
+
+    fileprivate static func getValue(_ key: String) throws -> String {
         let settings: [String: String]
         #if DEBUG
             settings = DebugSettingsHolder.settingsDictionary
@@ -55,6 +72,20 @@ struct ConditionalCompilationSettingsProvider: SettingsProvider {
     }
 }
 
+struct SchemeEnvironmentVariableProvider: SettingsProvider {
+
+    fileprivate static func getValue(_ key: String) throws -> String {
+        guard let value = ProcessInfo.processInfo.environment[key] else {
+            throw SettingsError.keyNotFound(key)
+        }
+        return value
+    }
+
+    func value(for key: String) throws -> String {
+        try SchemeEnvironmentVariableProvider.getValue(key)
+    }
+}
+
 enum SettingsError: Error {
     case keyNotFound(String)
     case typeMismatch(expected: String, key: String)
@@ -71,32 +102,18 @@ enum Settings {
         case bundleName = "CFBundleName"
         case xApiKey = "X API Key"
         case firebaseKey = "Firebase Key"
+        case registryApiKey = "REGISTRY_API_KEY"
     }
 
-    fileprivate static func getValue<T>(_ key: String) throws -> T {
-
-        let valueToLoad = Bundle.main.object(forInfoDictionaryKey: key)
-        if valueToLoad == nil {
-            throw SettingsError.keyNotFound(key)
-        }
-
-        guard let value = valueToLoad as? T
-        else {
-            throw SettingsError.typeMismatch(
-                expected: "\(T.self)", key: key)
-        }
-
-        return value
+    private static func value(for key: Settings.Key) throws -> String {
+        return try BundleSettingsProvider.getValue(key.rawValue)
     }
 
-    static func value(for key: Settings.Key) throws -> String {
-        return try getValue(key.rawValue)
-    }
-    
     private static let providers: [SettingsProvider] = [
-         BundleSettingsProvider(),
-         ConditionalCompilationSettingsProvider()
-     ]
+        BundleSettingsProvider(),
+        ConditionalCompilationSettingsProvider(),
+        SchemeEnvironmentVariableProvider(),
+    ]
 
     static var allSettings: [(String, String)] {
         get throws {
@@ -105,13 +122,13 @@ enum Settings {
                 let rawKey = key.rawValue
                 var resultValue: String? = nil
                 for provider in providers {
-                    if let value = try? provider.value(for:rawKey) {
+                    if let value = try? provider.value(for: rawKey) {
                         resultValue = value
                         break
                     }
-                    
+
                 }
-                guard let resultValue else  {
+                guard let resultValue else {
                     throw SettingsError.keyNotFound(rawKey)
                 }
                 return (rawKey, resultValue)
@@ -156,9 +173,17 @@ enum Settings {
         }
     }
 
-    static var firebaseKey: String  {
+    static var firebaseKey: String {
         get throws {
-            return try ConditionalCompilationSettingsProvider.getValue(Settings.Key.firebaseKey.rawValue)
+            return try ConditionalCompilationSettingsProvider.getValue(
+                Settings.Key.firebaseKey.rawValue)
+        }
+    }
+
+    static var registyApiKey: String {
+        get throws {
+            return try SchemeEnvironmentVariableProvider.getValue(
+                Settings.Key.registryApiKey.rawValue)
         }
     }
 

@@ -74,13 +74,8 @@
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = ""
-            value = ""
-            isEnabled = "NO">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "REGEISTRY_API_KEY"
-            value = ""
+            key = "REGISTRY_API_KEY"
+            value = "degbu registry api key"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
