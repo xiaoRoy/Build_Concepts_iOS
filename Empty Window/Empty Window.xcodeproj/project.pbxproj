@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C43926032DAFCB89008088B0 /* generate_configs.sh in Resources */ = {isa = PBXBuildFile; fileRef = C43926022DAFCB78008088B0 /* generate_configs.sh */; };
+		C47A56112DB384FB00A26E26 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A56102DB384FB00A26E26 /* Configs.swift */; };
 		C47D0C872D96A0B5000900D2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */; };
 		C47D0C892D96E93C000900D2 /* BuildInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */; };
 		C47D0C982D9AE2B8000900D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C972D9AE2B8000900D2 /* Settings.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C43926022DAFCB78008088B0 /* generate_configs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_configs.sh; sourceTree = "<group>"; };
+		C47A56102DB384FB00A26E26 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfoViewController.swift; sourceTree = "<group>"; };
 		C47D0C972D9AE2B8000900D2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 		C47D0C942D9AE272000900D2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C47A56102DB384FB00A26E26 /* Configs.swift */,
+				C43926022DAFCB78008088B0 /* generate_configs.sh */,
 				C47D0C972D9AE2B8000900D2 /* Settings.swift */,
 			);
 			path = Base;
@@ -239,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C82C8CAF28B4EC8200CBF5D7 /* Build configuration list for PBXNativeTarget "Empty Window" */;
 			buildPhases = (
+				C40DE5902DB2498800C72257 /* ShellScript */,
 				C82C8C9728B4EC7F00CBF5D7 /* Sources */,
 				C82C8C9828B4EC7F00CBF5D7 /* Frameworks */,
 				C82C8C9928B4EC7F00CBF5D7 /* Resources */,
@@ -318,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C82C8CAB28B4EC8200CBF5D7 /* LaunchScreen.storyboard in Resources */,
+				C43926032DAFCB89008088B0 /* generate_configs.sh in Resources */,
 				C82C8CA828B4EC8200CBF5D7 /* Assets.xcassets in Resources */,
 				C82C8CA628B4EC7F00CBF5D7 /* Main.storyboard in Resources */,
 			);
@@ -331,6 +339,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C40DE5902DB2498800C72257 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Empty Window/Configs/Debug.env",
+				"${SRCROOT}/Empty Window/Configs/Release.env",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${SRCROOT}/Empty Window/Base/Congifs.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Empty Window/Base/generate_configs.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C82C8C9728B4EC7F00CBF5D7 /* Sources */ = {
@@ -347,6 +378,7 @@
 				C82C8CA128B4EC7F00CBF5D7 /* SceneDelegate.swift in Sources */,
 				D0E8864F2A4EC794003B6E40 /* LocationDataManager.swift in Sources */,
 				D0564B3B2AD2B48F002DBC2C /* Calculator.swift in Sources */,
+				C47A56112DB384FB00A26E26 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +457,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -486,7 +518,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

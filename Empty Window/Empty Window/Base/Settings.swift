@@ -82,7 +82,26 @@ struct SchemeEnvironmentVariableProvider: SettingsProvider {
     }
 
     func value(for key: String) throws -> String {
-        try SchemeEnvironmentVariableProvider.getValue(key)
+        return try SchemeEnvironmentVariableProvider.getValue(key)
+    }
+}
+
+struct BuildScriptConfigsProvider: SettingsProvider {
+
+    fileprivate static func getValue(_ key: String) throws -> String {
+        guard let value = ConfigsHolder.holder[key] else {
+            throw SettingsError.keyNotFound(key)
+        }
+        return value
+    }
+
+    func value(for key: String) throws -> String {
+        return try BuildScriptConfigsProvider.getValue(key)
+    }
+
+    private struct ConfigsHolder {
+        static let remoteConfiKey = Settings.Key.remoteConfiKey.rawValue
+        static let holder: [String: String] = [remoteConfiKey:Configs.remoteConfiKey]
     }
 }
 
@@ -103,6 +122,7 @@ enum Settings {
         case xApiKey = "X API Key"
         case firebaseKey = "Firebase Key"
         case registryApiKey = "REGISTRY_API_KEY"
+        case remoteConfiKey = "REMOTE_CONFIG_KEY"
     }
 
     private static func value(for key: Settings.Key) throws -> String {
@@ -113,6 +133,7 @@ enum Settings {
         BundleSettingsProvider(),
         ConditionalCompilationSettingsProvider(),
         SchemeEnvironmentVariableProvider(),
+        BuildScriptConfigsProvider(),
     ]
 
     static var allSettings: [(String, String)] {
