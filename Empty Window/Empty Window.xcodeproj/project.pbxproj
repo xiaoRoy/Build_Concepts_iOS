@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C43926032DAFCB89008088B0 /* generate_configs.sh in Resources */ = {isa = PBXBuildFile; fileRef = C43926022DAFCB78008088B0 /* generate_configs.sh */; };
 		C47A56112DB384FB00A26E26 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A56102DB384FB00A26E26 /* Configs.swift */; };
+		C47A56142DB39F9100A26E26 /* WorkSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A56132DB39F9100A26E26 /* WorkSpaceViewController.swift */; };
+		C47A56162DB660D900A26E26 /* NetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47A56152DB660D900A26E26 /* NetworkService.framework */; };
+		C47A56172DB660D900A26E26 /* NetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C47A56152DB660D900A26E26 /* NetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C47D0C872D96A0B5000900D2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */; };
 		C47D0C892D96E93C000900D2 /* BuildInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */; };
 		C47D0C982D9AE2B8000900D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C972D9AE2B8000900D2 /* Settings.swift */; };
@@ -20,8 +23,6 @@
 		C82C8CA628B4EC7F00CBF5D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA428B4EC7F00CBF5D7 /* Main.storyboard */; };
 		C82C8CA828B4EC8200CBF5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA728B4EC8200CBF5D7 /* Assets.xcassets */; };
 		C82C8CAB28B4EC8200CBF5D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA928B4EC8200CBF5D7 /* LaunchScreen.storyboard */; };
-		C8E1E3F1294B7FB400BA2E54 /* NetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E1E3F0294B7FB400BA2E54 /* NetworkService.framework */; };
-		C8E1E3F2294B7FB400BA2E54 /* NetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8E1E3F0294B7FB400BA2E54 /* NetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0564B332AD2B16A002DBC2C /* Empty_Window_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0564B322AD2B16A002DBC2C /* Empty_Window_Tests.swift */; };
 		D0564B3B2AD2B48F002DBC2C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0564B3A2AD2B48F002DBC2C /* Calculator.swift */; };
 		D0564B3D2AD2B527002DBC2C /* CalculatorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0564B3C2AD2B527002DBC2C /* CalculatorTestCase.swift */; };
@@ -39,13 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C8E1E3F3294B7FB400BA2E54 /* Embed Frameworks */ = {
+		C47A56182DB660D900A26E26 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C8E1E3F2294B7FB400BA2E54 /* NetworkService.framework in Embed Frameworks */,
+				C47A56172DB660D900A26E26 /* NetworkService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +56,8 @@
 /* Begin PBXFileReference section */
 		C43926022DAFCB78008088B0 /* generate_configs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_configs.sh; sourceTree = "<group>"; };
 		C47A56102DB384FB00A26E26 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		C47A56132DB39F9100A26E26 /* WorkSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceViewController.swift; sourceTree = "<group>"; };
+		C47A56152DB660D900A26E26 /* NetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47D0C862D96A0B5000900D2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfoViewController.swift; sourceTree = "<group>"; };
 		C47D0C972D9AE2B8000900D2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		C82C8CA728B4EC8200CBF5D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82C8CAA28B4EC8200CBF5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C82C8CAC28B4EC8200CBF5D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8E1E3F0294B7FB400BA2E54 /* NetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0564B302AD2B16A002DBC2C /* Empty Window Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empty Window Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0564B322AD2B16A002DBC2C /* Empty_Window_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Window_Tests.swift; sourceTree = "<group>"; };
 		D0564B3A2AD2B48F002DBC2C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
@@ -98,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8E1E3F1294B7FB400BA2E54 /* NetworkService.framework in Frameworks */,
+				C47A56162DB660D900A26E26 /* NetworkService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +121,14 @@
 				C49EF93E2D9AF0F500CCC432 /* Release.xcconfig */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		C47A56122DB39F6700A26E26 /* WorkSpace */ = {
+			isa = PBXGroup;
+			children = (
+				C47A56132DB39F9100A26E26 /* WorkSpaceViewController.swift */,
+			);
+			path = WorkSpace;
 			sourceTree = "<group>";
 		};
 		C47D0C852D96A09C000900D2 /* Main */ = {
@@ -172,6 +182,7 @@
 		C82C8C9D28B4EC7F00CBF5D7 /* Empty Window */ = {
 			isa = PBXGroup;
 			children = (
+				C47A56122DB39F6700A26E26 /* WorkSpace */,
 				C47D0C942D9AE272000900D2 /* Base */,
 				C47D0C8D2D9AAFEC000900D2 /* Configs */,
 				C47D0C852D96A09C000900D2 /* Main */,
@@ -200,7 +211,7 @@
 		C8E1E3EF294B7FB400BA2E54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8E1E3F0294B7FB400BA2E54 /* NetworkService.framework */,
+				C47A56152DB660D900A26E26 /* NetworkService.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,7 +260,7 @@
 				C82C8C9728B4EC7F00CBF5D7 /* Sources */,
 				C82C8C9828B4EC7F00CBF5D7 /* Frameworks */,
 				C82C8C9928B4EC7F00CBF5D7 /* Resources */,
-				C8E1E3F3294B7FB400BA2E54 /* Embed Frameworks */,
+				C47A56182DB660D900A26E26 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,6 +381,7 @@
 			files = (
 				C82C8CA328B4EC7F00CBF5D7 /* ViewController.swift in Sources */,
 				C47D0C872D96A0B5000900D2 /* DashboardViewController.swift in Sources */,
+				C47A56142DB39F9100A26E26 /* WorkSpaceViewController.swift in Sources */,
 				C82C8C9F28B4EC7F00CBF5D7 /* AppDelegate.swift in Sources */,
 				C47D0C892D96E93C000900D2 /* BuildInfoViewController.swift in Sources */,
 				C47D0C982D9AE2B8000900D2 /* Settings.swift in Sources */,

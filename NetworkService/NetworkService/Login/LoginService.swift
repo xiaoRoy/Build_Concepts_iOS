@@ -9,11 +9,15 @@ import Foundation
 
 public class LoginService {
     
-    func login(email: String, password: String) -> String {
+    public init() {
+        
+    }
+    
+    public func login(email: String, password: String) -> String {
         return "user_token"
     }
     
-    func signup(email: String, password: String) -> String {
+    public func signup(email: String, password: String) -> String {
         return "user_token"
     }
 }

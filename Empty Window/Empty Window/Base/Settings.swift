@@ -207,5 +207,12 @@ enum Settings {
                 Settings.Key.registryApiKey.rawValue)
         }
     }
+    
+    static var remoteConfigKey: String {
+        get throws {
+            return try BuildScriptConfigsProvider.getValue(
+                Settings.Key.remoteConfiKey.rawValue)
+        }
+    }
 
 }

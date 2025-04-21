@@ -25,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C43152202DB6857E00E763D4 /* NetworkService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88D9A95294A441500908C23 /* NetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88D9A98294A441500908C23 /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
 		C88D9A99294A441500908C23 /* NetworkService.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkService.docc; sourceTree = "<group>"; };
@@ -52,9 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C43152212DB6857E00E763D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C43152202DB6857E00E763D4 /* NetworkService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C88D9A8B294A441500908C23 = {
 			isa = PBXGroup;
 			children = (
+				C43152212DB6857E00E763D4 /* Frameworks */,
 				C88D9A97294A441500908C23 /* NetworkService */,
 				C88D9AA3294A441600908C23 /* NetworkServiceTests */,
 				C88D9A96294A441500908C23 /* Products */,
