@@ -7,13 +7,14 @@
 
 import UIKit
 import NetworkService
+import RemoteConfig
 
 class WorkSpaceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         login()
-        
+        fetchRemoteConfigs()
         // Do any additional setup after loading the view.
     }
     
@@ -21,6 +22,12 @@ class WorkSpaceViewController: UIViewController {
         let loginService = LoginService()
         let token = loginService.login(email: "not@emailc.com", password: "as_pass")
         print(token)
+    }
+    
+    private func fetchRemoteConfigs() {
+        let remoteConfig = RemoteConifg()
+        let remoteConifgs = remoteConfig.fetchRemoteConfigs()
+        print(remoteConifgs)
     }
     
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C43152932DB749BB00E763D4 /* RemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43152922DB749BB00E763D4 /* RemoteConfig.framework */; };
+		C43152942DB749BB00E763D4 /* RemoteConfig.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C43152922DB749BB00E763D4 /* RemoteConfig.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C43926032DAFCB89008088B0 /* generate_configs.sh in Resources */ = {isa = PBXBuildFile; fileRef = C43926022DAFCB78008088B0 /* generate_configs.sh */; };
 		C47A56112DB384FB00A26E26 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A56102DB384FB00A26E26 /* Configs.swift */; };
 		C47A56142DB39F9100A26E26 /* WorkSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A56132DB39F9100A26E26 /* WorkSpaceViewController.swift */; };
@@ -46,6 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C43152942DB749BB00E763D4 /* RemoteConfig.framework in Embed Frameworks */,
 				C47A56172DB660D900A26E26 /* NetworkService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -54,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C43152922DB749BB00E763D4 /* RemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43926022DAFCB78008088B0 /* generate_configs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_configs.sh; sourceTree = "<group>"; };
 		C47A56102DB384FB00A26E26 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		C47A56132DB39F9100A26E26 /* WorkSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43152932DB749BB00E763D4 /* RemoteConfig.framework in Frameworks */,
 				C47A56162DB660D900A26E26 /* NetworkService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +216,7 @@
 		C8E1E3EF294B7FB400BA2E54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C43152922DB749BB00E763D4 /* RemoteConfig.framework */,
 				C47A56152DB660D900A26E26 /* NetworkService.framework */,
 			);
 			name = Frameworks;

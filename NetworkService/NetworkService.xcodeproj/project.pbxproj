@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C431526D2DB746AD00E763D4 /* RemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43152632DB746AD00E763D4 /* RemoteConfig.framework */; };
+		C431529A2DB74B1100E763D4 /* RemoteConifg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43152952DB74B1100E763D4 /* RemoteConifg.swift */; };
+		C431529B2DB74B1100E763D4 /* RemoteConfig.docc in Sources */ = {isa = PBXBuildFile; fileRef = C43152982DB74B1100E763D4 /* RemoteConfig.docc */; };
+		C431529C2DB74B1100E763D4 /* RemoteConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C43152972DB74B1100E763D4 /* RemoteConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C88D9A9A294A441500908C23 /* NetworkService.docc in Sources */ = {isa = PBXBuildFile; fileRef = C88D9A99294A441500908C23 /* NetworkService.docc */; };
 		C88D9AA0294A441600908C23 /* NetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88D9A95294A441500908C23 /* NetworkService.framework */; };
 		C88D9AA5294A441600908C23 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D9AA4294A441600908C23 /* NetworkServiceTests.swift */; };
@@ -15,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C431526E2DB746AD00E763D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C88D9A8C294A441500908C23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C43152622DB746AD00E763D4;
+			remoteInfo = RemoteConfig;
+		};
 		C88D9AA1294A441600908C23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C88D9A8C294A441500908C23 /* Project object */;
@@ -25,7 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C43152202DB6857E00E763D4 /* NetworkService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43152632DB746AD00E763D4 /* RemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C431526C2DB746AD00E763D4 /* RemoteConfigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteConfigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43152952DB74B1100E763D4 /* RemoteConifg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConifg.swift; sourceTree = "<group>"; };
+		C43152972DB74B1100E763D4 /* RemoteConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteConfig.h; sourceTree = "<group>"; };
+		C43152982DB74B1100E763D4 /* RemoteConfig.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RemoteConfig.docc; sourceTree = "<group>"; };
 		C88D9A95294A441500908C23 /* NetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88D9A98294A441500908C23 /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
 		C88D9A99294A441500908C23 /* NetworkService.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkService.docc; sourceTree = "<group>"; };
@@ -34,7 +49,26 @@
 		C8E1E3ED294B7EBA00BA2E54 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C43152902DB7475200E763D4 /* RemoteConfigTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RemoteConfigTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		C43152602DB746AD00E763D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43152692DB746AD00E763D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C431526D2DB746AD00E763D4 /* RemoteConfig.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C88D9A92294A441500908C23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,20 +87,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C43152212DB6857E00E763D4 /* Frameworks */ = {
+		C43152962DB74B1100E763D4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				C43152202DB6857E00E763D4 /* NetworkService.framework */,
+				C43152952DB74B1100E763D4 /* RemoteConifg.swift */,
 			);
-			name = Frameworks;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C43152992DB74B1100E763D4 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C43152962DB74B1100E763D4 /* Base */,
+				C43152972DB74B1100E763D4 /* RemoteConfig.h */,
+				C43152982DB74B1100E763D4 /* RemoteConfig.docc */,
+			);
+			path = RemoteConfig;
 			sourceTree = "<group>";
 		};
 		C88D9A8B294A441500908C23 = {
 			isa = PBXGroup;
 			children = (
-				C43152212DB6857E00E763D4 /* Frameworks */,
 				C88D9A97294A441500908C23 /* NetworkService */,
 				C88D9AA3294A441600908C23 /* NetworkServiceTests */,
+				C43152992DB74B1100E763D4 /* RemoteConfig */,
+				C43152902DB7475200E763D4 /* RemoteConfigTests */,
 				C88D9A96294A441500908C23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +121,8 @@
 			children = (
 				C88D9A95294A441500908C23 /* NetworkService.framework */,
 				C88D9A9F294A441600908C23 /* NetworkServiceTests.xctest */,
+				C43152632DB746AD00E763D4 /* RemoteConfig.framework */,
+				C431526C2DB746AD00E763D4 /* RemoteConfigTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +156,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		C431525E2DB746AD00E763D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C431529C2DB74B1100E763D4 /* RemoteConfig.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C88D9A90294A441500908C23 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,6 +175,49 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C43152622DB746AD00E763D4 /* RemoteConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43152752DB746AD00E763D4 /* Build configuration list for PBXNativeTarget "RemoteConfig" */;
+			buildPhases = (
+				C431525E2DB746AD00E763D4 /* Headers */,
+				C431525F2DB746AD00E763D4 /* Sources */,
+				C43152602DB746AD00E763D4 /* Frameworks */,
+				C43152612DB746AD00E763D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteConfig;
+			packageProductDependencies = (
+			);
+			productName = RemoteConfig;
+			productReference = C43152632DB746AD00E763D4 /* RemoteConfig.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C431526B2DB746AD00E763D4 /* RemoteConfigTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43152782DB746AD00E763D4 /* Build configuration list for PBXNativeTarget "RemoteConfigTests" */;
+			buildPhases = (
+				C43152682DB746AD00E763D4 /* Sources */,
+				C43152692DB746AD00E763D4 /* Frameworks */,
+				C431526A2DB746AD00E763D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C431526F2DB746AD00E763D4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C43152902DB7475200E763D4 /* RemoteConfigTests */,
+			);
+			name = RemoteConfigTests;
+			packageProductDependencies = (
+			);
+			productName = RemoteConfigTests;
+			productReference = C431526C2DB746AD00E763D4 /* RemoteConfigTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C88D9A94294A441500908C23 /* NetworkService */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C88D9AA9294A441600908C23 /* Build configuration list for PBXNativeTarget "NetworkService" */;
@@ -163,9 +261,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					C43152622DB746AD00E763D4 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					C431526B2DB746AD00E763D4 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					C88D9A94294A441500908C23 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -189,11 +293,27 @@
 			targets = (
 				C88D9A94294A441500908C23 /* NetworkService */,
 				C88D9A9E294A441600908C23 /* NetworkServiceTests */,
+				C43152622DB746AD00E763D4 /* RemoteConfig */,
+				C431526B2DB746AD00E763D4 /* RemoteConfigTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C43152612DB746AD00E763D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C431526A2DB746AD00E763D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C88D9A93294A441500908C23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +331,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C431525F2DB746AD00E763D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C431529A2DB74B1100E763D4 /* RemoteConifg.swift in Sources */,
+				C431529B2DB74B1100E763D4 /* RemoteConfig.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43152682DB746AD00E763D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C88D9A91294A441500908C23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +367,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C431526F2DB746AD00E763D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C43152622DB746AD00E763D4 /* RemoteConfig */;
+			targetProxy = C431526E2DB746AD00E763D4 /* PBXContainerItemProxy */;
+		};
 		C88D9AA2294A441600908C23 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C88D9A94294A441500908C23 /* NetworkService */;
@@ -239,6 +380,126 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C43152762DB746AD00E763D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiyogayo.RemoteConfig;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C43152772DB746AD00E763D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiyogayo.RemoteConfig;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C43152792DB746AD00E763D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiyogayo.RemoteConfigTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C431527A2DB746AD00E763D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiyogayo.RemoteConfigTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C88D9AA7294A441600908C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,7 +679,6 @@
 		C88D9AAD294A441600908C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -436,7 +696,6 @@
 		C88D9AAE294A441600908C23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -454,6 +713,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C43152752DB746AD00E763D4 /* Build configuration list for PBXNativeTarget "RemoteConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43152762DB746AD00E763D4 /* Debug */,
+				C43152772DB746AD00E763D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43152782DB746AD00E763D4 /* Build configuration list for PBXNativeTarget "RemoteConfigTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43152792DB746AD00E763D4 /* Debug */,
+				C431527A2DB746AD00E763D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C88D9A8F294A441500908C23 /* Build configuration list for PBXProject "NetworkService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
