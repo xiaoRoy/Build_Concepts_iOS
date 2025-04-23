@@ -8,6 +8,7 @@
 import UIKit
 import NetworkService
 import RemoteConfig
+import ImageLoading
 
 class WorkSpaceViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class WorkSpaceViewController: UIViewController {
         super.viewDidLoad()
         login()
         fetchRemoteConfigs()
+        initImageLoader()
         // Do any additional setup after loading the view.
     }
     
@@ -28,6 +30,11 @@ class WorkSpaceViewController: UIViewController {
         let remoteConfig = RemoteConifg()
         let remoteConifgs = remoteConfig.fetchRemoteConfigs()
         print(remoteConifgs)
+    }
+    
+    private func initImageLoader() {
+        let imageLoader = ImageLoader()
+        imageLoader.load(for: "image url")
     }
     
 
