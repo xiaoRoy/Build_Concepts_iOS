@@ -1,5 +1,9 @@
 # Mac OS files
 .DS_Store
-#"Empty Window"/"Empty Window"/Base/Configs.swift
+
+
 Empty Window/Empty Window/Base/Configs.swift
-/NetworkService/archives/
+
+#XCode Archive
+NetworkService/archives/
+NetworkService/xcframeworks/

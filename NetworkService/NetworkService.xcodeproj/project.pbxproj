@@ -96,6 +96,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C43152A22DB787A500E763D4 /* FeatureFlag */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C43152AF2DB78C8900E763D4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = FeatureFlag; sourceTree = "<group>"; };
 		C4A59D152DB8FC8F004CFA72 /* ImageLoading */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C4A59D182DB8FC8F004CFA72 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ImageLoading; sourceTree = "<group>"; };
+		C4A59D1E2DBA8441004CFA72 /* Scripts */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Scripts; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +192,7 @@
 		C88D9A8B294A441500908C23 = {
 			isa = PBXGroup;
 			children = (
+				C4A59D1E2DBA8441004CFA72 /* Scripts */,
 				C88D9A97294A441500908C23 /* NetworkService */,
 				C88D9AA3294A441600908C23 /* NetworkServiceTests */,
 				C43152992DB74B1100E763D4 /* RemoteConfig */,
@@ -333,6 +335,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				C43152A22DB787A500E763D4 /* FeatureFlag */,
+				C4A59D1E2DBA8441004CFA72 /* Scripts */,
 			);
 			name = FeatureFlag;
 			packageProductDependencies = (
@@ -786,6 +789,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -825,6 +829,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -1026,6 +1031,7 @@
 				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++17";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.learn.NetworkService;
 				PRODUCT_NAME = NetworkService;
 				SKIP_INSTALL = YES;
@@ -1058,6 +1064,7 @@
 				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++17";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.learn.NetworkService;
 				PRODUCT_NAME = NetworkService;
 				SKIP_INSTALL = YES;

@@ -18,7 +18,8 @@
 		C47D0C892D96E93C000900D2 /* BuildInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C882D96E93C000900D2 /* BuildInfoViewController.swift */; };
 		C47D0C982D9AE2B8000900D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D0C972D9AE2B8000900D2 /* Settings.swift */; };
 		C4A59CEB2DB794A2004CFA72 /* libFeatureFlag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A59CEA2DB794A2004CFA72 /* libFeatureFlag.a */; };
-		C4A59D1D2DB8FDA0004CFA72 /* ImageLoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A59D1C2DB8FDA0004CFA72 /* ImageLoading.framework */; };
+		C4A59D262DBBDF69004CFA72 /* ImageLoading.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A59D252DBBDF69004CFA72 /* ImageLoading.xcframework */; };
+		C4A59D272DBBDF69004CFA72 /* ImageLoading.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4A59D252DBBDF69004CFA72 /* ImageLoading.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C4EE82C32D9D2E88008D82ED /* BuildInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE82C22D9D2E88008D82ED /* BuildInfos.swift */; };
 		C821BDC6293523A200EE27BD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C821BDC5293523A200EE27BD /* Network.swift */; };
 		C82C8C9F28B4EC7F00CBF5D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				C43152942DB749BB00E763D4 /* RemoteConfig.framework in Embed Frameworks */,
+				C4A59D272DBBDF69004CFA72 /* ImageLoading.xcframework in Embed Frameworks */,
 				C47A56172DB660D900A26E26 /* NetworkService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -71,6 +73,7 @@
 		C49EF93E2D9AF0F500CCC432 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		C4A59CEA2DB794A2004CFA72 /* libFeatureFlag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFeatureFlag.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A59D1C2DB8FDA0004CFA72 /* ImageLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ImageLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A59D252DBBDF69004CFA72 /* ImageLoading.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ImageLoading.xcframework; path = ../NetworkService/xcframeworks/ImageLoading.xcframework; sourceTree = "<group>"; };
 		C4EE82C22D9D2E88008D82ED /* BuildInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfos.swift; sourceTree = "<group>"; };
 		C821BDC5293523A200EE27BD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C82C8C9B28B4EC7F00CBF5D7 /* Debug-Empty Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Debug-Empty Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A59D1D2DB8FDA0004CFA72 /* ImageLoading.framework in Frameworks */,
+				C4A59D262DBBDF69004CFA72 /* ImageLoading.xcframework in Frameworks */,
 				C43152932DB749BB00E763D4 /* RemoteConfig.framework in Frameworks */,
 				C4A59CEB2DB794A2004CFA72 /* libFeatureFlag.a in Frameworks */,
 				C47A56162DB660D900A26E26 /* NetworkService.framework in Frameworks */,
@@ -222,6 +225,7 @@
 		C8E1E3EF294B7FB400BA2E54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4A59D252DBBDF69004CFA72 /* ImageLoading.xcframework */,
 				C4A59D1C2DB8FDA0004CFA72 /* ImageLoading.framework */,
 				C4A59CEA2DB794A2004CFA72 /* libFeatureFlag.a */,
 				C43152922DB749BB00E763D4 /* RemoteConfig.framework */,
