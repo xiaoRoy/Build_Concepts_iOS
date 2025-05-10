@@ -12,38 +12,16 @@
         <!--Dashboard View Controller-->
         <scene sceneID="m2U-sK-S6r">
             <objects>
-                <viewController id="KJm-SM-Ugz" customClass="DashboardViewController" customModule="Debug_Empty_Window" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KJm-SM-Ugz" customClass="DashboardViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zrx-0y-o2W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2me-a9-KAh">
-                                <rect key="frame" x="32" y="80" width="95" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Build Info"/>
-                                <connections>
-                                    <segue destination="GtY-5i-56w" kind="show" id="99x-fC-WTJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5M-61-f1K">
-                                <rect key="frame" x="234" y="80" width="116" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Work Space"/>
-                                <connections>
-                                    <segue destination="BhF-MU-VvM" kind="show" id="QYJ-XY-Ijj"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2LC-Jb-VJb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="V5M-61-f1K" firstAttribute="firstBaseline" secondItem="2me-a9-KAh" secondAttribute="firstBaseline" id="6D5-71-gmg"/>
-                            <constraint firstItem="V5M-61-f1K" firstAttribute="top" secondItem="2me-a9-KAh" secondAttribute="top" id="Cgq-an-ym3"/>
-                            <constraint firstItem="2LC-Jb-VJb" firstAttribute="trailing" secondItem="V5M-61-f1K" secondAttribute="trailing" constant="64" id="iY0-7q-7QO"/>
-                            <constraint firstItem="2me-a9-KAh" firstAttribute="leading" secondItem="2LC-Jb-VJb" secondAttribute="leading" constant="32" id="ijJ-SI-qEJ"/>
-                            <constraint firstItem="2me-a9-KAh" firstAttribute="top" secondItem="2LC-Jb-VJb" secondAttribute="top" constant="32" id="qBH-Zr-lkk"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="GtY-5i-56w" kind="show" identifier="dashboardToBuildInfo" id="CkG-HK-d1z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuF-dV-eyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,9 +30,9 @@
         <!--Work Space View Controller-->
         <scene sceneID="2Yr-kd-xZB">
             <objects>
-                <viewController id="BhF-MU-VvM" customClass="WorkSpaceViewController" customModule="Debug_Empty_Window" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BhF-MU-VvM" customClass="WorkSpaceViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PSL-ks-Jd9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="zMD-VT-qGJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,7 +46,7 @@
         <!--Build Info View Controller-->
         <scene sceneID="QcS-n5-YzO">
             <objects>
-                <viewController id="GtY-5i-56w" customClass="BuildInfoViewController" customModule="Debug_Empty_Window" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GtY-5i-56w" customClass="BuildInfoViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QIq-8h-Vvs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,12 +57,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDI-Lc-f15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-129" y="-1010"/>
+            <point key="canvasLocation" x="-141" y="-1402"/>
+        </scene>
+        <!--Colors View Controller-->
+        <scene sceneID="Rv8-vw-4eY">
+            <objects>
+                <viewController id="Mg7-6p-CMo" customClass="ColorsViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOo-nf-j73">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ep8-Go-EbA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fUo-Ef-vlj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIi-Rn-k6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="-950"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Debug_Empty_Window" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
