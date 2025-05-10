@@ -38,7 +38,7 @@ class ColorsViewController: UIViewController {
         return collectionView
     }()
 
-    private let colorCollectionViewDelegate = ColorCollectionViewDelegate()
+    private let colorCollectionViewDelegate = CollectionViewEvenColumnDelegateLayout(numberOfItemsPerRow: 3)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,34 +97,4 @@ extension ColorsViewController: UICollectionViewDataSource {
 
     }
 
-}
-
-class ColorCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayout
-{
-
-    let numberOfItemsPerRow: CGFloat = 2
-
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        sizeForItemAt indexPath: IndexPath
-    ) -> CGSize {
-        guard
-            let collectionViewFlowLayout = collectionViewLayout
-                as? UICollectionViewFlowLayout
-        else {
-            return .zero
-        }
-
-        let totalSpacing =
-            collectionViewFlowLayout.sectionInset.left
-            + collectionViewFlowLayout.sectionInset.right
-            + (numberOfItemsPerRow - 1)
-            * collectionViewFlowLayout.minimumInteritemSpacing
-        let availableWidth = collectionView.bounds.width - totalSpacing
-        let itemWidth = availableWidth / numberOfItemsPerRow
-//        let scale = CGFloat.random(in: 0.0...1.0)
-//        let heightScale = CGFloat.random(in: 0.0...1.0)
-        return CGSize(width: itemWidth , height: itemWidth)
-    }
 }
