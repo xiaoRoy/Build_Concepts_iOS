@@ -21,6 +21,8 @@
                     </view>
                     <connections>
                         <segue destination="GtY-5i-56w" kind="show" identifier="dashboardToBuildInfo" id="CkG-HK-d1z"/>
+                        <segue destination="BhF-MU-VvM" kind="show" identifier="dashboardToWorkSpace" id="ihE-ek-luk"/>
+                        <segue destination="Mg7-6p-CMo" kind="show" identifier="dashboardToColors" id="SOs-Ik-X5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuF-dV-eyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -32,7 +34,7 @@
             <objects>
                 <viewController id="BhF-MU-VvM" customClass="WorkSpaceViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PSL-ks-Jd9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="zMD-VT-qGJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,7 +66,7 @@
             <objects>
                 <viewController id="Mg7-6p-CMo" customClass="ColorsViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EOo-nf-j73">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ep8-Go-EbA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

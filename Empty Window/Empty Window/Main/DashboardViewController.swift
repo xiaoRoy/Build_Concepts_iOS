@@ -31,22 +31,10 @@ class DashboardViewController: UIViewController {
     }()
 
     private lazy var dashboardItems: [DashboardItem] = {
-        let buildInfoItem = DashboardItem(
-            itemName: "Build Info",
-            navigation: self.generateDashboardNavigation(
-                identifier: "dashboardToBuildInfo", sender: nil))
-        return [buildInfoItem]
+        DashboardItem.generateDashboardItems(controller: self)
     }()
 
     private var colorCollectionViewDelegate: DashboardListDelegateLayout!
-
-    private func generateDashboardNavigation(identifier: String, sender: Any?)
-        -> DashboardItem.DashboardNavigayion
-    {
-        return { [weak self] () in
-            self?.performSegue(withIdentifier: identifier, sender: sender)
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,14 +64,7 @@ class DashboardViewController: UIViewController {
                 equalTo: layoutMarginGuide.bottomAnchor, constant: -insetOffset),
         ])
     }
-
-    //    @IBAction
-    //    func navigateToBuildState() {
-    //
-    //        performSegue(withIdentifier: "ShowBuildInfo", sender: nil)
-    //    }
-    //
-
+    
     /*
     // MARK: - Navigation
 
@@ -98,27 +79,4 @@ class DashboardViewController: UIViewController {
     func setupPaidVersionEntrance() {
 
     }
-
 }
-
-//extension DashboardViewController: UICollectionViewDataSource {
-//    func collectionView(
-//        _ collectionView: UICollectionView, numberOfItemsInSection section: Int
-//    ) -> Int {
-//        dashboardItems.count
-//    }
-//
-//    func collectionView(
-//        _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath
-//    ) -> UICollectionViewCell {
-//        let cell =
-//            collectionView.dequeueReusableCell(
-//                withReuseIdentifier: DashboardItemCell.reuseIdentifier,
-//                for: indexPath)
-//            as! DashboardItemCell
-//        let dashboardItem = dashboardItems[indexPath.item]
-//        cell.config(dashbordItem: dashboardItem)
-//        return cell
-//
-//    }
-//}
