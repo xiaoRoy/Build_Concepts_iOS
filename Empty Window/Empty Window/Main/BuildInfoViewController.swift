@@ -37,6 +37,7 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        showActiveCompilationConditions()
         configHeaderView()
         setupBuildInfos()
 

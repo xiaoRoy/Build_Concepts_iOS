@@ -75,10 +75,14 @@ struct ConditionalCompilationSettingsProvider: SettingsProvider {
 struct SchemeEnvironmentVariableProvider: SettingsProvider {
 
     fileprivate static func getValue(_ key: String) throws -> String {
-        guard let value = ProcessInfo.processInfo.environment[key] else {
-            throw SettingsError.keyNotFound(key)
-        }
-        return value
+        #if DEBUG
+            guard let value = ProcessInfo.processInfo.environment[key] else {
+                throw SettingsError.keyNotFound(key)
+            }
+            return value
+        #else
+            return "Only availble in Debug"
+        #endif
     }
 
     func value(for key: String) throws -> String {
@@ -101,7 +105,9 @@ struct BuildScriptConfigsProvider: SettingsProvider {
 
     private struct ConfigsHolder {
         static let remoteConfiKey = Settings.Key.remoteConfiKey.rawValue
-        static let holder: [String: String] = [remoteConfiKey:Configs.remoteConfiKey]
+        static let holder: [String: String] = [
+            remoteConfiKey: Configs.remoteConfiKey
+        ]
     }
 }
 
@@ -158,6 +164,10 @@ enum Settings {
         }
     }
 
+    static func getRegistryKeyOnlyInDebug() {
+
+    }
+
     static var buildConfiguraion: String {
         get throws {
             return try value(for: Settings.Key.buildConfiguration)
@@ -207,7 +217,7 @@ enum Settings {
                 Settings.Key.registryApiKey.rawValue)
         }
     }
-    
+
     static var remoteConfigKey: String {
         get throws {
             return try BuildScriptConfigsProvider.getValue(
@@ -215,4 +225,18 @@ enum Settings {
         }
     }
 
+}
+
+func showActiveCompilationConditions() {
+    #if FEATURE_A
+        print("Feature A")
+    #else
+        print("Not Feature A")
+    #endif
+
+    #if FEATURE_B
+        print("Feature B")
+    #else
+        print("Not Feature B")
+    #endif
 }

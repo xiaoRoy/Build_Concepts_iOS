@@ -38,15 +38,15 @@ class DashboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        colorCollectionViewDelegate = DashboardListDelegateLayout(
-            dashborardItems: dashboardItems)
+        setupPaidVersionEntrance()
         setupContainer()
 
         // Do any additional setup after loading the view.
     }
 
     private func setupContainer() {
-
+        colorCollectionViewDelegate = DashboardListDelegateLayout(
+            dashborardItems: dashboardItems)
         container.delegate = colorCollectionViewDelegate
         container.dataSource = colorCollectionViewDelegate
         let layoutMarginGuide = view.layoutMarginsGuide
@@ -64,7 +64,7 @@ class DashboardViewController: UIViewController {
                 equalTo: layoutMarginGuide.bottomAnchor, constant: -insetOffset),
         ])
     }
-    
+
     /*
     // MARK: - Navigation
 
@@ -77,6 +77,14 @@ class DashboardViewController: UIViewController {
 
     //MARK: - PAID version
     func setupPaidVersionEntrance() {
-
+        #if PAID
+        let paidDashboardItem: DashboardItem = DashboardItem(itemName: "Full Version", navigation: {
+            [weak self] () in
+                self?.performSegue(withIdentifier: "dashboardToPaid", sender: nil)
+            }
+        )
+        let firstPosition = 0
+        dashboardItems.insert(paidDashboardItem, at: firstPosition)
+        #endif
     }
 }

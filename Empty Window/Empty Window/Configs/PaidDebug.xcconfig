@@ -1,0 +1,14 @@
+//
+//  PaidDebug.xcconfig
+//  Empty Window
+//
+//  Created by Jerry Li on 2025/4/28.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Base.xcconfig"
+API_BASE_URL = https:/$()/qa.api.example.com
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_PRODUCT_BUNDLE_IDENTIFIER).paid.debug
+INFOPLIST_KEY_CFBundleDisplayName = Paid-Debug-$(inherited)
+PRODUCT_NAME = Paid-Debug-$(BASE_PRODUCT_NAME)

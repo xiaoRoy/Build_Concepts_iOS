@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Paid Debug Empty Window.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Paid Release Empty Window.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Release Empty Window .xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +27,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>C4A59D3F2DBF6C6C004CFA72</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C82C8C9A28B4EC7F00CBF5D7</key>
 		<dict>
 			<key>primary</key>

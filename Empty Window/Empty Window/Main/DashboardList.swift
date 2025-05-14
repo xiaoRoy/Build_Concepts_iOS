@@ -14,16 +14,6 @@ final class DashboardItemCell: UICollectionViewCell {
 
     var navigation: (() -> Void)?
 
-    private let actionLabel = {
-
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        //        label.tintColor = .black
-        //        label.backgroundColor = .blue
-        label.font = .boldSystemFont(ofSize: 14.0)
-        return label
-    }()
-
     private let actiongButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -40,7 +30,7 @@ final class DashboardItemCell: UICollectionViewCell {
     }
 
     private func initView() {
-        contentView.layer.borderColor = UIColor.blue.cgColor
+        contentView.layer.borderColor = UIColor.darkGray.cgColor
         contentView.layer.borderWidth = 2.0
         contentView.addSubview(actiongButton)
         actiongButton.addAction(
@@ -74,6 +64,34 @@ final class DashboardItem {
     init(itemName: String, navigation: @escaping DashboardNavigayion) {
         self.itemName = itemName
         self.navigation = navigation
+    }
+
+    static func generateDashboardItems(controller: UIViewController)
+        -> [DashboardItem]
+    {
+        let dahsboardItemInfos = [
+            ("Build Infos", "dashboardToBuildInfo"),
+            ("Work Space", "dashboardToWorkSpace"),
+            ("Colors Collection", "dashboardToColors")
+        ]
+        return dahsboardItemInfos.map { (itemName, segueIdentifier) in
+            DashboardItem(
+                itemName: itemName,
+                navigation: generateDashboardNavigation(
+                    controller, identifier: segueIdentifier))
+        }
+
+    }
+
+    private static func generateDashboardNavigation(
+        _ controller: UIViewController, identifier: String, sender: Any? = nil
+    )
+        -> DashboardItem.DashboardNavigayion
+    {
+
+        return { [weak controller] () in
+            controller?.performSegue(withIdentifier: identifier, sender: sender)
+        }
     }
 }
 

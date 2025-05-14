@@ -23,6 +23,7 @@
                         <segue destination="GtY-5i-56w" kind="show" identifier="dashboardToBuildInfo" id="CkG-HK-d1z"/>
                         <segue destination="BhF-MU-VvM" kind="show" identifier="dashboardToWorkSpace" id="ihE-ek-luk"/>
                         <segue destination="Mg7-6p-CMo" kind="show" identifier="dashboardToColors" id="SOs-Ik-X5f"/>
+                        <segue destination="hMM-Ua-lD6" kind="show" identifier="dashboardToPaid" id="QgZ-9N-7C4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuF-dV-eyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,6 +125,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="520" y="-173"/>
+        </scene>
+        <!--PaidFullVersion-->
+        <scene sceneID="5jK-UD-BcA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Paid" referencedIdentifier="PaidFullVersion" id="hMM-Ua-lD6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pYG-2k-Fpf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgG-dY-SRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="-770"/>
         </scene>
     </scenes>
     <resources>
