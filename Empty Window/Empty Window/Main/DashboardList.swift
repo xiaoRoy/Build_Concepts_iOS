@@ -72,7 +72,8 @@ final class DashboardItem {
         let dahsboardItemInfos = [
             ("Build Infos", "dashboardToBuildInfo"),
             ("Work Space", "dashboardToWorkSpace"),
-            ("Colors Collection", "dashboardToColors")
+            ("Colors Collection", "dashboardToColors"),
+            ("Network", "dashboardToNetwork")
         ]
         return dahsboardItemInfos.map { (itemName, segueIdentifier) in
             DashboardItem(

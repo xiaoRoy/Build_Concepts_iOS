@@ -24,6 +24,7 @@
                         <segue destination="BhF-MU-VvM" kind="show" identifier="dashboardToWorkSpace" id="ihE-ek-luk"/>
                         <segue destination="Mg7-6p-CMo" kind="show" identifier="dashboardToColors" id="SOs-Ik-X5f"/>
                         <segue destination="hMM-Ua-lD6" kind="show" identifier="dashboardToPaid" id="QgZ-9N-7C4"/>
+                        <segue destination="hwp-tc-Jfy" kind="show" identifier="dashboardToNetwork" id="suu-bE-GmU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuF-dV-eyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -60,7 +61,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDI-Lc-f15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-141" y="-1402"/>
+            <point key="canvasLocation" x="1719" y="-400"/>
+        </scene>
+        <!--Network View Controller-->
+        <scene sceneID="uey-YJ-iS8">
+            <objects>
+                <viewController id="hwp-tc-Jfy" customClass="NetworkViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z1b-Hx-DJr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="08M-Dk-evJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="697-rI-uIj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJb-gZ-iH8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="-1594"/>
         </scene>
         <!--Colors View Controller-->
         <scene sceneID="Rv8-vw-4eY">
@@ -135,6 +152,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgG-dY-SRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-204" y="-770"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BWs-j5-zid">
+            <objects>
+                <viewController id="axD-J0-eUG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Qb-Dg-QZp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hHe-4M-lfx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZQ-Ra-l9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1625" y="-1166"/>
         </scene>
     </scenes>
     <resources>

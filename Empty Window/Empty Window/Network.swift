@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import Alamofire
+
+
+func performRequest() {
+    AF.request("https://httpbin.org/get").response { response in
+        print(response)
+    }
+}

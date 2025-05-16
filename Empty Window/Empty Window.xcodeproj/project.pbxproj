@@ -13,6 +13,10 @@
 		C45528982DC613F3000C0992 /* DashboardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45528972DC613F3000C0992 /* DashboardList.swift */; };
 		C45528992DC613F3000C0992 /* DashboardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45528972DC613F3000C0992 /* DashboardList.swift */; };
 		C45528A22DD09D91000C0992 /* Paid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45528A12DD09D91000C0992 /* Paid.storyboard */; };
+		C45528D42DD732E2000C0992 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45528D32DD732E2000C0992 /* NetworkViewController.swift */; };
+		C45528D52DD732E2000C0992 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45528D32DD732E2000C0992 /* NetworkViewController.swift */; };
+		C45528D72DD734DA000C0992 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45528D62DD734DA000C0992 /* Alamofire.xcframework */; };
+		C45528D92DD73868000C0992 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45528D62DD734DA000C0992 /* Alamofire.xcframework */; };
 		C47A56112DB384FB00A26E26 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A56102DB384FB00A26E26 /* Configs.swift */; };
 		C47A56142DB39F9100A26E26 /* WorkSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A56132DB39F9100A26E26 /* WorkSpaceViewController.swift */; };
 		C47A56162DB660D900A26E26 /* NetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47A56152DB660D900A26E26 /* NetworkService.framework */; };
@@ -104,6 +108,8 @@
 		C43926022DAFCB78008088B0 /* generate_configs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_configs.sh; sourceTree = "<group>"; };
 		C45528972DC613F3000C0992 /* DashboardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardList.swift; sourceTree = "<group>"; };
 		C45528A12DD09D91000C0992 /* Paid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Paid.storyboard; sourceTree = "<group>"; };
+		C45528D32DD732E2000C0992 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		C45528D62DD734DA000C0992 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Alamofire.xcframework; sourceTree = "<group>"; };
 		C47A56102DB384FB00A26E26 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		C47A56132DB39F9100A26E26 /* WorkSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpaceViewController.swift; sourceTree = "<group>"; };
 		C47A56152DB660D900A26E26 /* NetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45528D72DD734DA000C0992 /* Alamofire.xcframework in Frameworks */,
 				C4A59D4F2DBF6C6C004CFA72 /* ImageLoading.xcframework in Frameworks */,
 				C4A59D502DBF6C6C004CFA72 /* RemoteConfig.framework in Frameworks */,
 				C4A59D512DBF6C6C004CFA72 /* libFeatureFlag.a in Frameworks */,
@@ -181,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45528D92DD73868000C0992 /* Alamofire.xcframework in Frameworks */,
 				C4A59D262DBBDF69004CFA72 /* ImageLoading.xcframework in Frameworks */,
 				C43152932DB749BB00E763D4 /* RemoteConfig.framework in Frameworks */,
 				C4A59CEB2DB794A2004CFA72 /* libFeatureFlag.a in Frameworks */,
@@ -240,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				C821BDC5293523A200EE27BD /* Network.swift */,
-				C8770F27297ADA1B003B4B16 /* Calendar */,
+				C45528D32DD732E2000C0992 /* NetworkViewController.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -292,16 +300,10 @@
 			path = "Empty Window";
 			sourceTree = "<group>";
 		};
-		C8770F27297ADA1B003B4B16 /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
 		C8E1E3EF294B7FB400BA2E54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C45528D62DD734DA000C0992 /* Alamofire.xcframework */,
 				C4A59D252DBBDF69004CFA72 /* ImageLoading.xcframework */,
 				C4A59D1C2DB8FDA0004CFA72 /* ImageLoading.framework */,
 				C4A59CEA2DB794A2004CFA72 /* libFeatureFlag.a */,
@@ -544,6 +546,7 @@
 				C4A59D472DBF6C6C004CFA72 /* Settings.swift in Sources */,
 				C4A59D482DBF6C6C004CFA72 /* Network.swift in Sources */,
 				C4A59D492DBF6C6C004CFA72 /* BuildInfos.swift in Sources */,
+				C45528D52DD732E2000C0992 /* NetworkViewController.swift in Sources */,
 				C4A59D4A2DBF6C6C004CFA72 /* SceneDelegate.swift in Sources */,
 				C4A59D4B2DBF6C6C004CFA72 /* LocationDataManager.swift in Sources */,
 				C4A59D4C2DBF6C6C004CFA72 /* Calculator.swift in Sources */,
@@ -564,6 +567,7 @@
 				C47D0C982D9AE2B8000900D2 /* Settings.swift in Sources */,
 				C821BDC6293523A200EE27BD /* Network.swift in Sources */,
 				C4EE82C32D9D2E88008D82ED /* BuildInfos.swift in Sources */,
+				C45528D42DD732E2000C0992 /* NetworkViewController.swift in Sources */,
 				C82C8CA128B4EC7F00CBF5D7 /* SceneDelegate.swift in Sources */,
 				D0E8864F2A4EC794003B6E40 /* LocationDataManager.swift in Sources */,
 				D0564B3B2AD2B48F002DBC2C /* Calculator.swift in Sources */,
