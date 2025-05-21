@@ -10,5 +10,5 @@
 #include "Base.xcconfig"
 API_BASE_URL = https:/$()/qa.api.example.com
 PRODUCT_BUNDLE_IDENTIFIER = $(BASE_PRODUCT_BUNDLE_IDENTIFIER).paid
-INFOPLIST_KEY_CFBundleDisplayName = Paid-$(inherited)
+INFOPLIST_KEY_CFBundleDisplayName = Paid-$(BASE_PRODUCT_NAME)
 PRODUCT_NAME = Paid-$(BASE_PRODUCT_NAME)

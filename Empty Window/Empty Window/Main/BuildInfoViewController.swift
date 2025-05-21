@@ -138,6 +138,8 @@ class BuildInfoViewController: UIViewController, UITableViewDelegate {
             print(bundleName)
             let allBuildInfos = try Settings.allSettings.map({
                 (key, value) -> BuildInfo in
+                print("\(key):\(value)")
+                
                 return BuildInfo(settingName: key, settingValue: value)
             })
             result.append(contentsOf: allBuildInfos)

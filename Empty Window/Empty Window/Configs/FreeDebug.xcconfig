@@ -11,7 +11,7 @@
 
 API_BASE_URL = https:/$()/qa.api.example.com
 PRODUCT_BUNDLE_IDENTIFIER = $(BASE_PRODUCT_BUNDLE_IDENTIFIER).free.debug
-INFOPLIST_KEY_CFBundleDisplayName = Debug-Free-$(inherited)
+INFOPLIST_KEY_CFBundleDisplayName = Debug-Free-$(BASE_PRODUCT_NAME)
 PRODUCT_NAME = Debug-Free-$(BASE_PRODUCT_NAME)
 
 //PRODUCT_NAME = Debug-$(BASE_PRODUCT_NAME)
