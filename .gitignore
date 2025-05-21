@@ -7,3 +7,41 @@ Empty Window/Empty Window/Base/Configs.swift
 #XCode Archive
 NetworkService/archives/
 NetworkService/xcframeworks/
+# CocoaPods
+#
+# We recommend against using the following patterns because of the Swift Package Manager
+# integration. However, if you have a legacy project, or have a reason to not commit
+# the Pods directory, these can be used.
+#
+# Pods/
+# Podfile.lock # if you want to regenerate lock file (discouraged)
+
+# You can use the above patterns IF you're ONLY using SPM now, or have very specific
+# reasons. For traditional CocoaPods use, do NOT uncomment Pods/ and Podfile.lock.
+
+# Correct patterns for general CocoaPods use:
+# (These lines are commonly included by Xcode's default .gitignore template or manually added)
+
+# CocoaPods generated artifacts
+# The Pods directory should generally NOT be checked in
+Pods/
+
+# The Pods project itself should NOT be checked in
+# (It's part of the Pods/ directory, but explicitly listing it for clarity if needed)
+# Pods/Pods.xcodeproj # This line is often redundant if Pods/ is ignored
+
+# Xcode User Data
+*.xcuserdatad
+
+# Build Products
+build/
+*.build/
+DerivedData/
+
+# Swift Package Manager (if used alongside CocoaPods)
+.swiftpm/
+
+# For generated xcworkspace files
+# (This is usually not needed if you commit the .xcworkspace itself,
+# but can be useful for other temporary workspace files)
+# *.xcworkspace/xcuserdata/
