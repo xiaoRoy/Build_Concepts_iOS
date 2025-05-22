@@ -1,6 +1,7 @@
 # Mac OS files
 .DS_Store
-
+## User settings
+xcuserdata/
 
 Empty Window/Empty Window/Base/Configs.swift
 
