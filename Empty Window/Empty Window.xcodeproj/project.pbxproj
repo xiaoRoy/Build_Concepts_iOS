@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 71;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1761F2DFBCACF1881E66A817 /* Pods_EW_Empty_Window_Paid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1B69C2472FB0C13B4EBB5 /* Pods_EW_Empty_Window_Paid.framework */; };
 		C43152932DB749BB00E763D4 /* RemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43152922DB749BB00E763D4 /* RemoteConfig.framework */; };
 		C43152942DB749BB00E763D4 /* RemoteConfig.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C43152922DB749BB00E763D4 /* RemoteConfig.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C43926032DAFCB89008088B0 /* generate_configs.sh in Resources */ = {isa = PBXBuildFile; fileRef = C43926022DAFCB78008088B0 /* generate_configs.sh */; };
@@ -58,6 +59,7 @@
 		C82C8CA628B4EC7F00CBF5D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA428B4EC7F00CBF5D7 /* Main.storyboard */; };
 		C82C8CA828B4EC8200CBF5D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA728B4EC8200CBF5D7 /* Assets.xcassets */; };
 		C82C8CAB28B4EC8200CBF5D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82C8CA928B4EC8200CBF5D7 /* LaunchScreen.storyboard */; };
+		CFEDD111C8351FB5D9EF31F6 /* Pods_Empty_Window_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4983F2E3F732853BE33E3F7D /* Pods_Empty_Window_Tests.framework */; };
 		D0564B332AD2B16A002DBC2C /* Empty_Window_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0564B322AD2B16A002DBC2C /* Empty_Window_Tests.swift */; };
 		D0564B3B2AD2B48F002DBC2C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0564B3A2AD2B48F002DBC2C /* Calculator.swift */; };
 		D0564B3D2AD2B527002DBC2C /* CalculatorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0564B3C2AD2B527002DBC2C /* CalculatorTestCase.swift */; };
@@ -104,6 +106,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		089CA309FA1B8EED0E1B17A4 /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
+		14E1145AD4F42621237DB04D /* Pods-Empty Window Base-Empty Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window.release.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window/Pods-Empty Window Base-Empty Window.release.xcconfig"; sourceTree = "<group>"; };
+		197D44E350E3C641422859D0 /* Pods-EW-Empty Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window.release.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window.release.xcconfig"; sourceTree = "<group>"; };
+		19F1F67EDD31FF6066C47387 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		2AED62FEC3101E215BAC5B5E /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
+		2C55BE2C8C7AF0B667748345 /* Pods-Empty Window Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Tests.debug.xcconfig"; path = "Target Support Files/Pods-Empty Window Tests/Pods-Empty Window Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		33FD3FCF24C5C0D3407BC57E /* Pods-Empty Window Base-Empty Window Paid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window Paid.debug.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window Paid/Pods-Empty Window Base-Empty Window Paid.debug.xcconfig"; sourceTree = "<group>"; };
+		373B5C9EBF2030CC597B4514 /* Pods-Empty Window Base-Empty Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window.debug.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window/Pods-Empty Window Base-Empty Window.debug.xcconfig"; sourceTree = "<group>"; };
+		4037579DD8B687A21D5D8ABB /* Pods-EW-Empty Window Paid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window Paid.debug.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid.debug.xcconfig"; sourceTree = "<group>"; };
+		4983F2E3F732853BE33E3F7D /* Pods_Empty_Window_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empty_Window_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		498A826CD6AAADE753B9E23C /* Pods_EW_Empty_Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EW_Empty_Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C44636FEC6681930E0CD159 /* Pods-EW-Empty Window Paid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window Paid.release.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid.release.xcconfig"; sourceTree = "<group>"; };
+		55550FC2C15299402F3E2FE3 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "./Empty Window/Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		62676ACC42FD99D0A7CC0F2A /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		627E2E36F466F7A0192CCA8A /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
+		6B1777FF90B488D0C6804E88 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		842CE4C71B09ABC74436791A /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		9376C2D87282A441735BF9CE /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
+		99B1B69C2472FB0C13B4EBB5 /* Pods_EW_Empty_Window_Paid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EW_Empty_Window_Paid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE4EBC203B419F002601F21 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		A46C882B9D66A9C78A9850DE /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
+		A4C8F696E63D99885F25C5B1 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		B43A2B261B8F0D6149BAA518 /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
 		C43152922DB749BB00E763D4 /* RemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43926022DAFCB78008088B0 /* generate_configs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_configs.sh; sourceTree = "<group>"; };
 		C45528972DC613F3000C0992 /* DashboardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardList.swift; sourceTree = "<group>"; };
@@ -124,8 +149,9 @@
 		C4A59D5F2DBF6C6C004CFA72 /* Paid-Debug-EW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paid-Debug-EW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A59D622DBF75C0004CFA72 /* Paid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paid-Info.plist"; sourceTree = "<group>"; };
 		C4EE82C22D9D2E88008D82ED /* BuildInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfos.swift; sourceTree = "<group>"; };
+		C61855F89C5494C32CF734E8 /* Pods-EW-Empty Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window.debug.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window.debug.xcconfig"; sourceTree = "<group>"; };
 		C821BDC5293523A200EE27BD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		C82C8C9B28B4EC7F00CBF5D7 /* Debug-Free-EW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Debug-Free-EW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82C8C9B28B4EC7F00CBF5D7 /* Free-Debug-EW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free-Debug-EW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C82C8CA228B4EC7F00CBF5D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,15 +159,25 @@
 		C82C8CA728B4EC8200CBF5D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82C8CAA28B4EC8200CBF5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C82C8CAC28B4EC8200CBF5D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C852AE507D3BB2621C26F22F /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
+		C990FAC61C93172C58B61E8C /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		CEF0D982D76EFE71C43F7162 /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
 		D0564B302AD2B16A002DBC2C /* Empty Window Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empty Window Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0564B322AD2B16A002DBC2C /* Empty_Window_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Window_Tests.swift; sourceTree = "<group>"; };
 		D0564B3A2AD2B48F002DBC2C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		D0564B3C2AD2B527002DBC2C /* CalculatorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTestCase.swift; sourceTree = "<group>"; };
 		D0E8864E2A4EC794003B6E40 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
+		E15BD7558D46536F547037D4 /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
+		E9A0F97799B75CCF55F778FF /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
+		ED70791B28734BF542ADB66E /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "../../../../../Empty Window/Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
+		ED7DEDA97A5D2E793C225566 /* Pods-Empty Window Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Tests.release.xcconfig"; path = "Target Support Files/Pods-Empty Window Tests/Pods-Empty Window Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FBA404AF7B64BD68FD968AF9 /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
+		FBDA56C79B2C3F40926CB4C6 /* Pods-Empty Window Base-Empty Window Paid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window Paid.release.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window Paid/Pods-Empty Window Base-Empty Window Paid.release.xcconfig"; sourceTree = "<group>"; };
+		FD25836C18B85A9C903C924B /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C4A59D602DBF6C6C004CFA72 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		C4A59D602DBF6C6C004CFA72 /* Exceptions for "Configs" folder in "Empty Window Paid" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Base.xcconfig,
@@ -154,7 +190,7 @@
 			);
 			target = C4A59D3F2DBF6C6C004CFA72 /* Empty Window Paid */;
 		};
-		C4EE82C12D9D18CD008D82ED /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		C4EE82C12D9D18CD008D82ED /* Exceptions for "Configs" folder in "Empty Window" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				FreeDebug.xcconfig,
@@ -165,10 +201,36 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C455288A2DC2530E000C0992 /* CollectionView */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CollectionView; sourceTree = "<group>"; };
-		C455289A2DCA0492000C0992 /* Ui */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Ui; sourceTree = "<group>"; };
-		C45528A32DD0BBF8000C0992 /* Paid */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Paid; sourceTree = "<group>"; };
-		C47D0C8D2D9AAFEC000900D2 /* Configs */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C4EE82C12D9D18CD008D82ED /* PBXFileSystemSynchronizedBuildFileExceptionSet */, C4A59D602DBF6C6C004CFA72 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Configs; sourceTree = "<group>"; };
+		C455288A2DC2530E000C0992 /* CollectionView */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		C455289A2DCA0492000C0992 /* Ui */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		C45528A32DD0BBF8000C0992 /* Paid */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = Paid;
+			sourceTree = "<group>";
+		};
+		C47D0C8D2D9AAFEC000900D2 /* Configs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C4EE82C12D9D18CD008D82ED /* Exceptions for "Configs" folder in "Empty Window" target */,
+				C4A59D602DBF6C6C004CFA72 /* Exceptions for "Configs" folder in "Empty Window Paid" target */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +243,7 @@
 				C4A59D502DBF6C6C004CFA72 /* RemoteConfig.framework in Frameworks */,
 				C4A59D512DBF6C6C004CFA72 /* libFeatureFlag.a in Frameworks */,
 				C4A59D522DBF6C6C004CFA72 /* NetworkService.framework in Frameworks */,
+				1761F2DFBCACF1881E66A817 /* Pods_EW_Empty_Window_Paid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +256,7 @@
 				C43152932DB749BB00E763D4 /* RemoteConfig.framework in Frameworks */,
 				C4A59CEB2DB794A2004CFA72 /* libFeatureFlag.a in Frameworks */,
 				C47A56162DB660D900A26E26 /* NetworkService.framework in Frameworks */,
+				2B0641D5F29286F29A9A6905 /* Pods_EW_Empty_Window.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEDD111C8351FB5D9EF31F6 /* Pods_Empty_Window_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,13 +325,35 @@
 				C82C8C9C28B4EC7F00CBF5D7 /* Products */,
 				C8E1E3EF294B7FB400BA2E54 /* Frameworks */,
 				C47442EB2D9AF22E00BEF3A7 /* Recovered References */,
+				F5D0B43F1EF28A5A7F28DD34 /* Pods */,
+				842CE4C71B09ABC74436791A /* FreeDebug.xcconfig */,
+				55550FC2C15299402F3E2FE3 /* FreeDebug.xcconfig */,
+				ED70791B28734BF542ADB66E /* FreeDebug.xcconfig */,
+				6B1777FF90B488D0C6804E88 /* FreeDebug.xcconfig */,
+				62676ACC42FD99D0A7CC0F2A /* FreeDebug.xcconfig */,
+				A4C8F696E63D99885F25C5B1 /* FreeDebug.xcconfig */,
+				A46C882B9D66A9C78A9850DE /* FreeRelease.xcconfig */,
+				FD25836C18B85A9C903C924B /* PaidDebug.xcconfig */,
+				B43A2B261B8F0D6149BAA518 /* PaidRelease.xcconfig */,
+				19F1F67EDD31FF6066C47387 /* FreeDebug.xcconfig */,
+				2AED62FEC3101E215BAC5B5E /* FreeRelease.xcconfig */,
+				FBA404AF7B64BD68FD968AF9 /* PaidDebug.xcconfig */,
+				089CA309FA1B8EED0E1B17A4 /* PaidRelease.xcconfig */,
+				C990FAC61C93172C58B61E8C /* FreeDebug.xcconfig */,
+				E9A0F97799B75CCF55F778FF /* FreeRelease.xcconfig */,
+				C852AE507D3BB2621C26F22F /* PaidDebug.xcconfig */,
+				E15BD7558D46536F547037D4 /* PaidRelease.xcconfig */,
+				9FE4EBC203B419F002601F21 /* FreeDebug.xcconfig */,
+				627E2E36F466F7A0192CCA8A /* FreeRelease.xcconfig */,
+				CEF0D982D76EFE71C43F7162 /* PaidDebug.xcconfig */,
+				9376C2D87282A441735BF9CE /* PaidRelease.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		C82C8C9C28B4EC7F00CBF5D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C82C8C9B28B4EC7F00CBF5D7 /* Debug-Free-EW.app */,
+				C82C8C9B28B4EC7F00CBF5D7 /* Free-Debug-EW.app */,
 				D0564B302AD2B16A002DBC2C /* Empty Window Tests.xctest */,
 				C4A59D5F2DBF6C6C004CFA72 /* Paid-Debug-EW.app */,
 			);
@@ -309,6 +396,9 @@
 				C4A59CEA2DB794A2004CFA72 /* libFeatureFlag.a */,
 				C43152922DB749BB00E763D4 /* RemoteConfig.framework */,
 				C47A56152DB660D900A26E26 /* NetworkService.framework */,
+				4983F2E3F732853BE33E3F7D /* Pods_Empty_Window_Tests.framework */,
+				498A826CD6AAADE753B9E23C /* Pods_EW_Empty_Window.framework */,
+				99B1B69C2472FB0C13B4EBB5 /* Pods_EW_Empty_Window_Paid.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,6 +436,24 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		F5D0B43F1EF28A5A7F28DD34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				373B5C9EBF2030CC597B4514 /* Pods-Empty Window Base-Empty Window.debug.xcconfig */,
+				14E1145AD4F42621237DB04D /* Pods-Empty Window Base-Empty Window.release.xcconfig */,
+				33FD3FCF24C5C0D3407BC57E /* Pods-Empty Window Base-Empty Window Paid.debug.xcconfig */,
+				FBDA56C79B2C3F40926CB4C6 /* Pods-Empty Window Base-Empty Window Paid.release.xcconfig */,
+				2C55BE2C8C7AF0B667748345 /* Pods-Empty Window Tests.debug.xcconfig */,
+				ED7DEDA97A5D2E793C225566 /* Pods-Empty Window Tests.release.xcconfig */,
+				C61855F89C5494C32CF734E8 /* Pods-EW-Empty Window.debug.xcconfig */,
+				197D44E350E3C641422859D0 /* Pods-EW-Empty Window.release.xcconfig */,
+				4037579DD8B687A21D5D8ABB /* Pods-EW-Empty Window Paid.debug.xcconfig */,
+				4C44636FEC6681930E0CD159 /* Pods-EW-Empty Window Paid.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,11 +461,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4A59D5C2DBF6C6C004CFA72 /* Build configuration list for PBXNativeTarget "Empty Window Paid" */;
 			buildPhases = (
+				55725F653F5006502394E31C /* [CP] Check Pods Manifest.lock */,
 				C4A59D402DBF6C6C004CFA72 /* ShellScript */,
 				C4A59D412DBF6C6C004CFA72 /* Sources */,
 				C4A59D4E2DBF6C6C004CFA72 /* Frameworks */,
 				C4A59D532DBF6C6C004CFA72 /* Resources */,
 				C4A59D582DBF6C6C004CFA72 /* Embed Frameworks */,
+				78C12C6CE0D65FAAAE55142E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,11 +488,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C82C8CAF28B4EC8200CBF5D7 /* Build configuration list for PBXNativeTarget "Empty Window" */;
 			buildPhases = (
+				56F05264C0F589AA60578D65 /* [CP] Check Pods Manifest.lock */,
 				C40DE5902DB2498800C72257 /* ShellScript */,
 				C82C8C9728B4EC7F00CBF5D7 /* Sources */,
 				C82C8C9828B4EC7F00CBF5D7 /* Frameworks */,
 				C82C8C9928B4EC7F00CBF5D7 /* Resources */,
 				C47A56182DB660D900A26E26 /* Embed Frameworks */,
+				61CA20B765E83716EAE26EC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -396,13 +508,14 @@
 			);
 			name = "Empty Window";
 			productName = "Empty Window";
-			productReference = C82C8C9B28B4EC7F00CBF5D7 /* Debug-Free-EW.app */;
+			productReference = C82C8C9B28B4EC7F00CBF5D7 /* Free-Debug-EW.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D0564B2F2AD2B16A002DBC2C /* Empty Window Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0564B382AD2B16A002DBC2C /* Build configuration list for PBXNativeTarget "Empty Window Tests" */;
 			buildPhases = (
+				E6D2DE91E8F91026F3BD4045 /* [CP] Check Pods Manifest.lock */,
 				D0564B2C2AD2B16A002DBC2C /* Sources */,
 				D0564B2D2AD2B16A002DBC2C /* Frameworks */,
 				D0564B2E2AD2B16A002DBC2C /* Resources */,
@@ -437,7 +550,6 @@
 				};
 			};
 			buildConfigurationList = C82C8C9628B4EC7F00CBF5D7 /* Build configuration list for PBXProject "Empty Window" */;
-			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -445,6 +557,7 @@
 				Base,
 			);
 			mainGroup = C82C8C9228B4EC7F00CBF5D7;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = C82C8C9C28B4EC7F00CBF5D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -490,6 +603,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		55725F653F5006502394E31C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EW-Empty Window Paid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56F05264C0F589AA60578D65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EW-Empty Window-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61CA20B765E83716EAE26EC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78C12C6CE0D65FAAAE55142E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C40DE5902DB2498800C72257 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -529,6 +720,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Empty Window/Base/generate_configs.sh\"\n";
+		};
+		E6D2DE91E8F91026F3BD4045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Empty Window Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -616,6 +829,7 @@
 /* Begin XCBuildConfiguration section */
 		C4A59D5D2DBF6C6C004CFA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD25836C18B85A9C903C924B /* PaidDebug.xcconfig */;
 			baseConfigurationReferenceAnchor = C47D0C8D2D9AAFEC000900D2 /* Configs */;
 			baseConfigurationReferenceRelativePath = PaidDebug.xcconfig;
 			buildSettings = {
@@ -651,6 +865,7 @@
 		};
 		C4A59D5E2DBF6C6C004CFA72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43A2B261B8F0D6149BAA518 /* PaidRelease.xcconfig */;
 			baseConfigurationReferenceAnchor = C47D0C8D2D9AAFEC000900D2 /* Configs */;
 			baseConfigurationReferenceRelativePath = PaidRelease.xcconfig;
 			buildSettings = {
@@ -802,6 +1017,7 @@
 		};
 		C82C8CB028B4EC8200CBF5D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62676ACC42FD99D0A7CC0F2A /* FreeDebug.xcconfig */;
 			baseConfigurationReferenceAnchor = C47D0C8D2D9AAFEC000900D2 /* Configs */;
 			baseConfigurationReferenceRelativePath = FreeDebug.xcconfig;
 			buildSettings = {
@@ -840,6 +1056,7 @@
 		};
 		C82C8CB128B4EC8200CBF5D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46C882B9D66A9C78A9850DE /* FreeRelease.xcconfig */;
 			baseConfigurationReferenceAnchor = C47D0C8D2D9AAFEC000900D2 /* Configs */;
 			baseConfigurationReferenceRelativePath = FreeRelease.xcconfig;
 			buildSettings = {
@@ -875,6 +1092,7 @@
 		};
 		D0564B362AD2B16A002DBC2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C55BE2C8C7AF0B667748345 /* Pods-Empty Window Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -896,6 +1114,7 @@
 		};
 		D0564B372AD2B16A002DBC2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7DEDA97A5D2E793C225566 /* Pods-Empty Window Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

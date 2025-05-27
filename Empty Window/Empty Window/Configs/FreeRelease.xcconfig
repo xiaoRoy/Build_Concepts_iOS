@@ -9,6 +9,8 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 #include "Base.xcconfig"
+//#include "../../../Pods/Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window.release.xcconfig"
+
 API_BASE_URL = https:/$()/qa.api.example.com
 PRODUCT_BUNDLE_IDENTIFIER = $(BASE_PRODUCT_BUNDLE_IDENTIFIER).free
 INFOPLIST_KEY_CFBundleDisplayName = Free-$(BASE_PRODUCT_NAME)
