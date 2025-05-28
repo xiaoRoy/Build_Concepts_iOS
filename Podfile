@@ -32,7 +32,7 @@ class EwScheme
   # EMPTY_WINDOW_FREE_TARGET = 'Empty Window'
   # EMPTY_WINDOW_PAID_TARGET = 'Empty Window Paid'
   EMPTY_WINDOW_CONFIGS_PATH = "Empty Window/Configs/%s.xcconfig"
-  EMPTY_WINDOW_PODS_CONFIGS_PATH = "#include\"../../../Pods/Target Support Files/%s/%s.%s.xcconfig\""
+  EMPTY_WINDOW_PODS_CONFIGS_PATH = "#include \"../../../Pods/Target Support Files/%s/%s.%s.xcconfig\""
   CONFIG_DEBUG = 'Debug'
   CONFIG_RELEASE = 'Release'
   TARGET_FREE = 'Empty Window'
@@ -42,7 +42,6 @@ class EwScheme
   TARGETS_TO_HANDLE = [TARGET_FREE, TARGET_PAID]
 
   def initialize (config, target)
-    puts config + target
     @config = config
     @target = target
   end   
@@ -57,22 +56,13 @@ class EwScheme
       raise StandardError, "Not supported #{@target}" 
     end
     config_file = config_file + @config.to_s
-    result = EwScheme::EMPTY_WINDOW_CONFIGS_PATH % config_file
-    puts result
-    return result
+    return EwScheme::EMPTY_WINDOW_CONFIGS_PATH % config_file
   end
 
-
-  def generate_pod_config_file()
+  def generate_pod_config_file_including()
     pods_target = "#{PODS_PREFIX}#{@target}"
-    return EwScheme::EMPTY_WINDOW_PODS_CONFIGS_PATH % [pods_target, pods_target, @config]
+    return EwScheme::EMPTY_WINDOW_PODS_CONFIGS_PATH % [pods_target, pods_target, @config.downcase]
   end
-
-
-
-
-
-
 end
 
 EMPTY_WINDOW_FREE_TARGET = 'Empty Window'
@@ -91,6 +81,34 @@ def generate_config_files_mapping()
   }
 end
 
+def set_configurations(empty_window_project, config, config_file_path)
+  
+  config_file = empty_window_project.new_file(config_file_path)
+  config.base_configuration_reference = config_file
+      
+end
+
+def add_pod_config_file(scheme, config_file_path)
+  pod_config_file_including = scheme.generate_pod_config_file_including()
+  config_file_full_path = "#{Dir.pwd}/Empty Window/#{config_file_path}"
+ 
+  config_file = File.open(config_file_full_path, 'r+')
+  lines = config_file.readlines
+  unless lines.any?{ |line| line.strip == pod_config_file_including}
+    puts "add pod config including"
+    tempt_file_full_path = "#{config_file_full_path}.temp"
+    File.open(tempt_file_full_path, 'w') do |temp|
+      lines.each do |line|
+        if line.include?("#include")
+          temp.puts "\n#{pod_config_file_including}"
+        end
+        temp.puts line
+      end
+    end
+    File.rename(tempt_file_full_path, config_file_full_path)
+  end
+end
+
 post_install do |installer|
   require 'xcodeproj'
   empty_window_path = 'Empty Window/Empty Window.xcodeproj'
@@ -100,35 +118,16 @@ post_install do |installer|
     next unless EwScheme::TARGETS_TO_HANDLE.include?(target_name)
     target.build_configurations.each do |config|
     scheme = EwScheme.new(config.name, target_name)
-    begin
-      config_file_path = scheme.generate_config_file()
-      config_file = empty_window_project.new_file(config_file_path)
-      config.base_configuration_reference = config_file
-      empty_window_project.save
-    rescue StandardError => error
+      begin
+        config_file_path = scheme.generate_config_file()
+        add_pod_config_file(scheme, config_file_path)
+        set_configurations(empty_window_project, config, config_file_path)
+        empty_window_project.save
+      rescue Errno::ENOENT => error
+        puts "Error: File(#{config_file_path}) not found. "
+      rescue StandardError => error
         puts "Error: Not support #{target_name}."
+      end
     end
   end
-end
-
-# post_install do |installer|
-#   require 'xcodeproj'
-#   configs_files = generate_config_files_mapping()
-#   empty_window_path = 'Empty Window/Empty Window.xcodeproj'
-#   empty_window_project = Xcodeproj::Project.open(empty_window_path)
-#   empty_window_project.targets.each do |target|
-#     next unless [EMPTY_WINDOW_FREE_TARGET, EMPTY_WINDOW_PAID_TARGET].include?(target.name)
-#     target.build_configurations.each do |config|
-#       config_and_target = "#{config.name}:#{target.name}"
-#       begin
-#         config_file_path = configs_files.fetch(config_and_target)
-#         config_file = empty_window_project.new_file(config_file_path)
-#         config.base_configuration_reference = config_file
-#         empty_window_project.save
-#       rescue KeyError => error
-#           puts "Error: Key '#{config_and_target}' mapping config file not found. "
-#       end 
-#     end
-#   end
-  
 end

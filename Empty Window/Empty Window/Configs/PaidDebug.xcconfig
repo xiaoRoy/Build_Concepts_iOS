@@ -7,8 +7,9 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../../../Pods/Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid.debug.xcconfig"
 #include "Base.xcconfig"
-//#include "../../../Pods/Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid.debug.xcconfig"
 
 API_BASE_URL = https:/$()/qa.api.example.com
 PRODUCT_BUNDLE_IDENTIFIER = $(BASE_PRODUCT_BUNDLE_IDENTIFIER).paid.debug

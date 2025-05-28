@@ -7,11 +7,10 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../../../Pods/Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window.debug.xcconfig"
 #include "Base.xcconfig"
-//#include "../../../Pods/Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window.debug.xcconfig"
 API_BASE_URL = https:/$()/qa.api.example.com
 PRODUCT_BUNDLE_IDENTIFIER = $(BASE_PRODUCT_BUNDLE_IDENTIFIER).free.debug
 INFOPLIST_KEY_CFBundleDisplayName = Debug-Free-$(BASE_PRODUCT_NAME)
 PRODUCT_NAME = Free-Debug-$(BASE_PRODUCT_NAME)
-
-//PRODUCT_NAME = Debug-$(BASE_PRODUCT_NAME)
