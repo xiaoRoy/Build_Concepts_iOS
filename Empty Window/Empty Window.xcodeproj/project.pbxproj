@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1761F2DFBCACF1881E66A817 /* Pods_EW_Empty_Window_Paid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1B69C2472FB0C13B4EBB5 /* Pods_EW_Empty_Window_Paid.framework */; };
+		2B0641D5F29286F29A9A6905 /* Pods_EW_Empty_Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498A826CD6AAADE753B9E23C /* Pods_EW_Empty_Window.framework */; };
 		C43152932DB749BB00E763D4 /* RemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43152922DB749BB00E763D4 /* RemoteConfig.framework */; };
 		C43152942DB749BB00E763D4 /* RemoteConfig.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C43152922DB749BB00E763D4 /* RemoteConfig.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C43926032DAFCB89008088B0 /* generate_configs.sh in Resources */ = {isa = PBXBuildFile; fileRef = C43926022DAFCB78008088B0 /* generate_configs.sh */; };
@@ -106,8 +107,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06F739CBB6FED5438B1AA69F /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 		089CA309FA1B8EED0E1B17A4 /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
 		14E1145AD4F42621237DB04D /* Pods-Empty Window Base-Empty Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window.release.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window/Pods-Empty Window Base-Empty Window.release.xcconfig"; sourceTree = "<group>"; };
+		17DFB5F660F9B6D222746030 /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
 		197D44E350E3C641422859D0 /* Pods-EW-Empty Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window.release.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window.release.xcconfig"; sourceTree = "<group>"; };
 		19F1F67EDD31FF6066C47387 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 		2AED62FEC3101E215BAC5B5E /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 		4983F2E3F732853BE33E3F7D /* Pods_Empty_Window_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empty_Window_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		498A826CD6AAADE753B9E23C /* Pods_EW_Empty_Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EW_Empty_Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C44636FEC6681930E0CD159 /* Pods-EW-Empty Window Paid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window Paid.release.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid.release.xcconfig"; sourceTree = "<group>"; };
+		531E3C3EB8B801F0344D021D /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
 		55550FC2C15299402F3E2FE3 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "./Empty Window/Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 		62676ACC42FD99D0A7CC0F2A /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 		627E2E36F466F7A0192CCA8A /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 		C852AE507D3BB2621C26F22F /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
 		C990FAC61C93172C58B61E8C /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 		CEF0D982D76EFE71C43F7162 /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
+		CF0A11C6A9C7AD2B4CBDA9AB /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
 		D0564B302AD2B16A002DBC2C /* Empty Window Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empty Window Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0564B322AD2B16A002DBC2C /* Empty_Window_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Window_Tests.swift; sourceTree = "<group>"; };
 		D0564B3A2AD2B48F002DBC2C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
@@ -347,6 +352,10 @@
 				627E2E36F466F7A0192CCA8A /* FreeRelease.xcconfig */,
 				CEF0D982D76EFE71C43F7162 /* PaidDebug.xcconfig */,
 				9376C2D87282A441735BF9CE /* PaidRelease.xcconfig */,
+				06F739CBB6FED5438B1AA69F /* FreeDebug.xcconfig */,
+				CF0A11C6A9C7AD2B4CBDA9AB /* FreeRelease.xcconfig */,
+				531E3C3EB8B801F0344D021D /* PaidDebug.xcconfig */,
+				17DFB5F660F9B6D222746030 /* PaidRelease.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
