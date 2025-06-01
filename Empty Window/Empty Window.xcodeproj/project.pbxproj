@@ -107,25 +107,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		12C4E502FD0BEC21F21D0ACD /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
 		14E1145AD4F42621237DB04D /* Pods-Empty Window Base-Empty Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window.release.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window/Pods-Empty Window Base-Empty Window.release.xcconfig"; sourceTree = "<group>"; };
 		197D44E350E3C641422859D0 /* Pods-EW-Empty Window.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window.release.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window.release.xcconfig"; sourceTree = "<group>"; };
 		2C55BE2C8C7AF0B667748345 /* Pods-Empty Window Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Tests.debug.xcconfig"; path = "Target Support Files/Pods-Empty Window Tests/Pods-Empty Window Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2DB9D8B20F11C994753EE020 /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
-		32ADA32686249727526E0A10 /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
+		32500DA0E13F074B297BD2B8 /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
 		33FD3FCF24C5C0D3407BC57E /* Pods-Empty Window Base-Empty Window Paid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window Paid.debug.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window Paid/Pods-Empty Window Base-Empty Window Paid.debug.xcconfig"; sourceTree = "<group>"; };
 		373B5C9EBF2030CC597B4514 /* Pods-Empty Window Base-Empty Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window.debug.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window/Pods-Empty Window Base-Empty Window.debug.xcconfig"; sourceTree = "<group>"; };
 		4037579DD8B687A21D5D8ABB /* Pods-EW-Empty Window Paid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window Paid.debug.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid.debug.xcconfig"; sourceTree = "<group>"; };
 		4983F2E3F732853BE33E3F7D /* Pods_Empty_Window_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empty_Window_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		498A826CD6AAADE753B9E23C /* Pods_EW_Empty_Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EW_Empty_Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C44636FEC6681930E0CD159 /* Pods-EW-Empty Window Paid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window Paid.release.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window Paid/Pods-EW-Empty Window Paid.release.xcconfig"; sourceTree = "<group>"; };
-		65CAA977FBB30BA1426541A8 /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
-		6B3EAB4E9C18D4A107523C18 /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
-		709EE9A6C48AF1E9FDF7AE33 /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
-		86B415DD2A7CF0C0D67E990A /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
 		99B1B69C2472FB0C13B4EBB5 /* Pods_EW_Empty_Window_Paid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EW_Empty_Window_Paid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A7618996F4D53E6124D4571 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
-		BB1AE041921EEB2E8F3E083C /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
+		B4F9C707F7A08A248E5FFEE4 /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
+		C0696F6A13C0C27792D9740E /* PaidDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidDebug.xcconfig; path = "Empty Window/Configs/PaidDebug.xcconfig"; sourceTree = "<group>"; };
 		C43152922DB749BB00E763D4 /* RemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43926022DAFCB78008088B0 /* generate_configs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_configs.sh; sourceTree = "<group>"; };
 		C45528972DC613F3000C0992 /* DashboardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardList.swift; sourceTree = "<group>"; };
@@ -143,13 +137,12 @@
 		C4A59CEA2DB794A2004CFA72 /* libFeatureFlag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFeatureFlag.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A59D1C2DB8FDA0004CFA72 /* ImageLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ImageLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A59D252DBBDF69004CFA72 /* ImageLoading.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ImageLoading.xcframework; path = ../NetworkService/xcframeworks/ImageLoading.xcframework; sourceTree = "<group>"; };
-		C4A59D5F2DBF6C6C004CFA72 /* Paid-Debug-EW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paid-Debug-EW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A59D5F2DBF6C6C004CFA72 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A59D622DBF75C0004CFA72 /* Paid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paid-Info.plist"; sourceTree = "<group>"; };
 		C4EE82C22D9D2E88008D82ED /* BuildInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfos.swift; sourceTree = "<group>"; };
 		C61855F89C5494C32CF734E8 /* Pods-EW-Empty Window.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EW-Empty Window.debug.xcconfig"; path = "Target Support Files/Pods-EW-Empty Window/Pods-EW-Empty Window.debug.xcconfig"; sourceTree = "<group>"; };
-		C6947DB96BFD107E83A36593 /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
 		C821BDC5293523A200EE27BD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		C82C8C9B28B4EC7F00CBF5D7 /* Free-Debug-EW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free-Debug-EW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82C8C9B28B4EC7F00CBF5D7 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82C8C9E28B4EC7F00CBF5D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C82C8CA028B4EC7F00CBF5D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C82C8CA228B4EC7F00CBF5D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,19 +150,14 @@
 		C82C8CA728B4EC8200CBF5D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82C8CAA28B4EC8200CBF5D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C82C8CAC28B4EC8200CBF5D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDD52F8D0E66F5C981743B2A /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
-		CE2863DC20E3D08761956800 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 		D0564B302AD2B16A002DBC2C /* Empty Window Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empty Window Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0564B322AD2B16A002DBC2C /* Empty_Window_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_Window_Tests.swift; sourceTree = "<group>"; };
 		D0564B3A2AD2B48F002DBC2C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		D0564B3C2AD2B527002DBC2C /* CalculatorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTestCase.swift; sourceTree = "<group>"; };
 		D0E8864E2A4EC794003B6E40 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
-		D5EB1F7A693BCE3CB7F55856 /* FreeRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeRelease.xcconfig; path = "Empty Window/Configs/FreeRelease.xcconfig"; sourceTree = "<group>"; };
+		EA54F641A000694A0D4A1B69 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 		ED7DEDA97A5D2E793C225566 /* Pods-Empty Window Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Tests.release.xcconfig"; path = "Target Support Files/Pods-Empty Window Tests/Pods-Empty Window Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FA2C2428BA517DBB144FC0E8 /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 		FBDA56C79B2C3F40926CB4C6 /* Pods-Empty Window Base-Empty Window Paid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empty Window Base-Empty Window Paid.release.xcconfig"; path = "Target Support Files/Pods-Empty Window Base-Empty Window Paid/Pods-Empty Window Base-Empty Window Paid.release.xcconfig"; sourceTree = "<group>"; };
-		FC9B521309178608B70304D0 /* PaidRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = PaidRelease.xcconfig; path = "Empty Window/Configs/PaidRelease.xcconfig"; sourceTree = "<group>"; };
-		FCE231AE37A87C92BB262BDD /* FreeDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = FreeDebug.xcconfig; path = "Empty Window/Configs/FreeDebug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -225,6 +213,13 @@
 				C4A59D602DBF6C6C004CFA72 /* Exceptions for "Configs" folder in "Empty Window Paid" target */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		C482292D2DE84FB0001CD708 /* Snapkit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = Snapkit;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -322,31 +317,19 @@
 				C8E1E3EF294B7FB400BA2E54 /* Frameworks */,
 				C47442EB2D9AF22E00BEF3A7 /* Recovered References */,
 				F5D0B43F1EF28A5A7F28DD34 /* Pods */,
-				FCE231AE37A87C92BB262BDD /* FreeDebug.xcconfig */,
-				D5EB1F7A693BCE3CB7F55856 /* FreeRelease.xcconfig */,
-				12C4E502FD0BEC21F21D0ACD /* PaidDebug.xcconfig */,
-				CDD52F8D0E66F5C981743B2A /* PaidRelease.xcconfig */,
-				FA2C2428BA517DBB144FC0E8 /* FreeDebug.xcconfig */,
-				C6947DB96BFD107E83A36593 /* FreeRelease.xcconfig */,
-				86B415DD2A7CF0C0D67E990A /* PaidDebug.xcconfig */,
-				FC9B521309178608B70304D0 /* PaidRelease.xcconfig */,
-				CE2863DC20E3D08761956800 /* FreeDebug.xcconfig */,
-				709EE9A6C48AF1E9FDF7AE33 /* FreeRelease.xcconfig */,
-				2DB9D8B20F11C994753EE020 /* PaidDebug.xcconfig */,
-				BB1AE041921EEB2E8F3E083C /* PaidRelease.xcconfig */,
-				9A7618996F4D53E6124D4571 /* FreeDebug.xcconfig */,
-				65CAA977FBB30BA1426541A8 /* FreeRelease.xcconfig */,
-				6B3EAB4E9C18D4A107523C18 /* PaidDebug.xcconfig */,
-				32ADA32686249727526E0A10 /* PaidRelease.xcconfig */,
+				EA54F641A000694A0D4A1B69 /* FreeDebug.xcconfig */,
+				32500DA0E13F074B297BD2B8 /* FreeRelease.xcconfig */,
+				C0696F6A13C0C27792D9740E /* PaidDebug.xcconfig */,
+				B4F9C707F7A08A248E5FFEE4 /* PaidRelease.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		C82C8C9C28B4EC7F00CBF5D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C82C8C9B28B4EC7F00CBF5D7 /* Free-Debug-EW.app */,
+				C82C8C9B28B4EC7F00CBF5D7 /* .app */,
 				D0564B302AD2B16A002DBC2C /* Empty Window Tests.xctest */,
-				C4A59D5F2DBF6C6C004CFA72 /* Paid-Debug-EW.app */,
+				C4A59D5F2DBF6C6C004CFA72 /* .app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,6 +337,7 @@
 		C82C8C9D28B4EC7F00CBF5D7 /* Empty Window */ = {
 			isa = PBXGroup;
 			children = (
+				C482292D2DE84FB0001CD708 /* Snapkit */,
 				C45528A32DD0BBF8000C0992 /* Paid */,
 				C455289A2DCA0492000C0992 /* Ui */,
 				C455288A2DC2530E000C0992 /* CollectionView */,
@@ -469,10 +453,11 @@
 				C455289A2DCA0492000C0992 /* Ui */,
 				C45528A32DD0BBF8000C0992 /* Paid */,
 				C47D0C8D2D9AAFEC000900D2 /* Configs */,
+				C482292D2DE84FB0001CD708 /* Snapkit */,
 			);
 			name = "Empty Window Paid";
 			productName = "Empty Window";
-			productReference = C4A59D5F2DBF6C6C004CFA72 /* Paid-Debug-EW.app */;
+			productReference = C4A59D5F2DBF6C6C004CFA72 /* .app */;
 			productType = "com.apple.product-type.application";
 		};
 		C82C8C9A28B4EC7F00CBF5D7 /* Empty Window */ = {
@@ -496,10 +481,11 @@
 				C455289A2DCA0492000C0992 /* Ui */,
 				C45528A32DD0BBF8000C0992 /* Paid */,
 				C47D0C8D2D9AAFEC000900D2 /* Configs */,
+				C482292D2DE84FB0001CD708 /* Snapkit */,
 			);
 			name = "Empty Window";
 			productName = "Empty Window";
-			productReference = C82C8C9B28B4EC7F00CBF5D7 /* Free-Debug-EW.app */;
+			productReference = C82C8C9B28B4EC7F00CBF5D7 /* .app */;
 			productType = "com.apple.product-type.application";
 		};
 		D0564B2F2AD2B16A002DBC2C /* Empty Window Tests */ = {
@@ -820,7 +806,7 @@
 /* Begin XCBuildConfiguration section */
 		C4A59D5D2DBF6C6C004CFA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12C4E502FD0BEC21F21D0ACD /* PaidDebug.xcconfig */;
+			baseConfigurationReference = C0696F6A13C0C27792D9740E /* PaidDebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -854,7 +840,7 @@
 		};
 		C4A59D5E2DBF6C6C004CFA72 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDD52F8D0E66F5C981743B2A /* PaidRelease.xcconfig */;
+			baseConfigurationReference = B4F9C707F7A08A248E5FFEE4 /* PaidRelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1004,7 +990,7 @@
 		};
 		C82C8CB028B4EC8200CBF5D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCE231AE37A87C92BB262BDD /* FreeDebug.xcconfig */;
+			baseConfigurationReference = EA54F641A000694A0D4A1B69 /* FreeDebug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1041,7 +1027,7 @@
 		};
 		C82C8CB128B4EC8200CBF5D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5EB1F7A693BCE3CB7F55856 /* FreeRelease.xcconfig */;
+			baseConfigurationReference = 32500DA0E13F074B297BD2B8 /* FreeRelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

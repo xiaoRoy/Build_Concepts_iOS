@@ -73,7 +73,8 @@ final class DashboardItem {
             ("Build Infos", "dashboardToBuildInfo"),
             ("Work Space", "dashboardToWorkSpace"),
             ("Colors Collection", "dashboardToColors"),
-            ("Network", "dashboardToNetwork")
+            ("Network", "dashboardToNetwork"),
+            ("Snapkit", "dashboardToSnapkit")
         ]
         return dahsboardItemInfos.map { (itemName, segueIdentifier) in
             DashboardItem(

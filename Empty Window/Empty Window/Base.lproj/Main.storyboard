@@ -12,7 +12,7 @@
         <!--Dashboard View Controller-->
         <scene sceneID="m2U-sK-S6r">
             <objects>
-                <viewController id="KJm-SM-Ugz" customClass="DashboardViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KJm-SM-Ugz" customClass="DashboardViewController" customModule="Free_Debug_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zrx-0y-o2W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,7 @@
                         <segue destination="Mg7-6p-CMo" kind="show" identifier="dashboardToColors" id="SOs-Ik-X5f"/>
                         <segue destination="hMM-Ua-lD6" kind="show" identifier="dashboardToPaid" id="QgZ-9N-7C4"/>
                         <segue destination="hwp-tc-Jfy" kind="show" identifier="dashboardToNetwork" id="suu-bE-GmU"/>
+                        <segue destination="uGL-3i-CsK" kind="show" identifier="dashboardToSnapkit" id="Sap-63-d9e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuF-dV-eyy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -34,7 +35,7 @@
         <!--Work Space View Controller-->
         <scene sceneID="2Yr-kd-xZB">
             <objects>
-                <viewController id="BhF-MU-VvM" customClass="WorkSpaceViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BhF-MU-VvM" customClass="WorkSpaceViewController" customModule="Free_Debug_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PSL-ks-Jd9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +51,7 @@
         <!--Build Info View Controller-->
         <scene sceneID="QcS-n5-YzO">
             <objects>
-                <viewController id="GtY-5i-56w" customClass="BuildInfoViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GtY-5i-56w" customClass="BuildInfoViewController" customModule="Free_Debug_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QIq-8h-Vvs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +67,7 @@
         <!--Network View Controller-->
         <scene sceneID="uey-YJ-iS8">
             <objects>
-                <viewController id="hwp-tc-Jfy" customClass="NetworkViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hwp-tc-Jfy" customClass="NetworkViewController" customModule="Free_Debug_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z1b-Hx-DJr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,10 +80,26 @@
             </objects>
             <point key="canvasLocation" x="904" y="-1594"/>
         </scene>
+        <!--Snapkit View Controller-->
+        <scene sceneID="AOw-Qz-aQj">
+            <objects>
+                <viewController id="uGL-3i-CsK" customClass="SnapkitViewController" customModule="Free_Debug_EW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6hG-TH-Bv1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UmG-Yr-FVI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ha3-OG-8WQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekN-Mm-6EK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2314" y="-1302"/>
+        </scene>
         <!--Colors View Controller-->
         <scene sceneID="Rv8-vw-4eY">
             <objects>
-                <viewController id="Mg7-6p-CMo" customClass="ColorsViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mg7-6p-CMo" customClass="ColorsViewController" customModule="Free_Debug_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EOo-nf-j73">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +115,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Debug_Free_EW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Free_Debug_EW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
